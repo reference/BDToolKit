@@ -10,13 +10,13 @@ A development kit for iOS
 DBToolKit is available through [CocoaPods](https://cocoapods.org/pods/BDToolKit). To install it, simply add the following line to your Podfile:
 
 ```
-pod "BDToolbox"
+pod 'BDToolKit'
 ```
 
 ## Usage
 
 ```
-#import <BDToolbox/BDToolbox.h>
+#import <BDToolKit/BDToolKit.h>
 ```
 
 ## Foundation
@@ -33,4 +33,4 @@ pod "BDToolbox"
 
 ## License
 
-`BDToolbox` is available under the MIT license. See the `LICENSE` file for more info.
+`BDToolKit` is available under the MIT license. See the `LICENSE` file for more info.
