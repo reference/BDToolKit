@@ -25,9 +25,22 @@ SOFTWARE.
 #ifndef BDToolKit_h
 #define BDToolKit_h
 
-//UIKit
+//controllers
+#import "BDViewController.h"
+#import "BDTableViewController.h"
+#import "BDCollectionViewController.h"
+
+//views
+#import "BDView.h"
+#import "BDTableViewCell.h"
+#import "BDCollectionViewCell.h"
+
+//catagory
 #import "UIView+BD.h"
-#import "UIViewController+BD.h"
-#import "UITableViewController+BD.h"
+#import "NSArray+BDUIKIT.h"
+#import "NSString+BD.h"
+#import "UILabel+BD.h"
+#import "UITextField+BD.h"
+#import "UITextView+BD.h"
 
 #endif /* BDToolKit_h */

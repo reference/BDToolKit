@@ -21,22 +21,8 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+#import "BDTableViewCell.h"
 
-#import "UITableViewController+BD.h"
-#import <objc/runtime.h>
-
-static const char *kDataSourcePropertyKey = "kDataSourcePropertyKey";
-
-@implementation UITableViewController (BD)
-
-- (NSMutableArray *)dataSource
-{
-    return objc_getAssociatedObject(self, kDataSourcePropertyKey);
-}
-
-- (void)setDataSource:(NSMutableArray *)dataSource
-{
-    objc_setAssociatedObject(self,kDataSourcePropertyKey, dataSource,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
+@implementation BDTableViewCell
 
 @end

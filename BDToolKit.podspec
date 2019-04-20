@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BDToolKit"
-  s.version      = "0.0.2"
-  s.summary      = "A simple toolkit for ios."
+  s.version      = "1.0.0"
+  s.summary      = "Usefull tool for objective-c develop."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -63,10 +63,10 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios
-  # s.platform     = :ios, "8.0"
+  # s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -89,10 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  =  "*.{h,m}"
-  #s.exclude_files = "*"
-
-  #s.public_header_files = "*.h"
+  s.source_files  =  "BDToolKit.h"
+  s.public_header_files = "BDToolKit.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,6 +103,67 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
+
+    s.subspec "BDViewController" do |ss|
+        ss.source_files  = "UIKit/Controller/BDViewController/*.{h,m}"
+        ss.public_header_files = "UIKit/Controller/BDViewController/*.h"
+    end
+
+    s.subspec "BDTableViewController" do |ss|
+        ss.source_files  = "UIKit/Controller/BDTableViewController/*.{h,m}"
+        ss.public_header_files = "UIKit/Controller/BDTableViewController/*.h"
+    end
+
+    s.subspec "BDCollectionViewController" do |ss|
+        ss.source_files  = "UIKit/Controller/BDCollectionViewController/*.{h,m}"
+        ss.public_header_files = "UIKit/Controller/BDCollectionViewController/*.h"
+    end
+
+    s.subspec "BDView" do |ss|
+        ss.source_files  = "UIKit/View/BDView/*.{h,m}"
+        ss.public_header_files = "UIKit/View/BDView/*.h"
+    end
+
+    s.subspec "BDTableViewCell" do |ss|
+        ss.source_files  = "UIKit/View/BDTableViewCell/*.{h,m}"
+        ss.public_header_files = "UIKit/View/BDTableViewCell/*.h"
+    end
+
+    s.subspec "BDCollectionViewCell" do |ss|
+        ss.source_files  = "UIKit/View/BDCollectionViewCell/*.{h,m}"
+        ss.public_header_files = "UIKit/View/BDCollectionViewCell/*.h"
+    end
+
+    s.subspec "NSArray+BDUIKIT" do |ss|
+        ss.source_files  = "UIKit/Catagory/NSArray+BDUIKIT/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSArray+BDUIKIT/*.h"
+    end
+
+    s.subspec "NSString+BD" do |ss|
+        ss.source_files  = "UIKit/Catagory/NSString+BD/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSString+BD/*.h"
+    end
+
+    s.subspec "UILabel+BD" do |ss|
+        ss.source_files  = "UIKit/Catagory/UILabel+BD/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UILabel+BD/*.h"
+    end
+
+    s.subspec "UITextField+BD" do |ss|
+        ss.source_files  = "UIKit/Catagory/UITextField+BD/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UITextField+BD/*.h"
+    end
+
+    s.subspec "UITextView+BD" do |ss|
+        ss.source_files  = "UIKit/Catagory/UITextView+BD/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UITextView+BD/*.h"
+    end
+
+    s.subspec "UIView+BD" do |ss|
+        ss.source_files  = "UIKit/Catagory/UIView+BD/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UIView+BD/*.h"
+    end
+
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

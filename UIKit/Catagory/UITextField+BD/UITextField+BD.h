@@ -21,14 +21,14 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-
 #import <UIKit/UIKit.h>
 
-@interface UITableViewController (BD)
+@interface UITextField_BD : UIView
 
-/**
- @brief dataSource for tableView.use lazy loading.
- */
-@property (nonatomic,strong) NSMutableArray *dataSource;
+//placeholder
+- (void)setPlaceHolderColor:(UIColor *)color;
+
+//animation
+- (void)shake;
 
 @end

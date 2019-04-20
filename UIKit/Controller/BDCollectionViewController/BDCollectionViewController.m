@@ -21,9 +21,16 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+#import "BDCollectionViewController.h"
 
-#import "UIViewController+BD.h"
+@interface BDCollectionViewController ()
 
-@implementation UIViewController(BD)
+@end
 
+@implementation BDCollectionViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.dataArray = [NSMutableArray array];
+}
 @end

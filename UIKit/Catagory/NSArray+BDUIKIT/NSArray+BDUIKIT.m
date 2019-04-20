@@ -21,8 +21,31 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-#import <UIKit/UIKit.h>
+#import "NSArray+BDUIKIT.h"
 
-@interface UIView (BD)
+@implementation NSArray(BDUIKIT)
+- (UILabel *)labelForTag:(NSInteger )tag
+{
+    return (UILabel *)[self viewForTag:tag];
+}
 
+- (UIButton *)buttonForTag:(NSInteger )tag
+{
+    return (UIButton *)[self viewForTag:tag];
+}
+
+- (UITextField *)textFieldForTag:(NSInteger )tag
+{
+    return (UITextField *)[self viewForTag:tag];
+}
+
+- (UIView *)viewForTag:(NSInteger )tag
+{
+    for (UIView *v in self) {
+        if (v.tag == tag) {
+            return v;
+        }
+    }
+    return nil;
+}
 @end
