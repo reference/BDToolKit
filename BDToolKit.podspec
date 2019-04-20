@@ -9,13 +9,13 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "1.0.1"
+  s.version      = "1.0.3"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop."
   s.homepage     = "https://github.com/reference/BDToolKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "Scott Ban" => "imti_bandianhong@126.com" }
-  s.platform     = :ios, "9.0"
+  s.author       = { "Scott Ban" => "imti_bandianhong@126.com" }
+  s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/reference/BDToolKit.git", :tag => "#{s.version}" }
 
   s.frameworks = "UIKit", "Foundation"
