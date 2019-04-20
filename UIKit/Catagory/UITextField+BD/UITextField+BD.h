@@ -23,7 +23,7 @@
  */
 #import <UIKit/UIKit.h>
 
-@interface UITextField_BD : UIView
+@interface UITextField(BD)
 
 //placeholder
 - (void)setPlaceHolderColor:(UIColor *)color;
