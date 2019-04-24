@@ -34,6 +34,11 @@
     return (UIButton *)[self viewForTag:tag];
 }
 
+- (UIImageView *)imageViewForTag:(NSInteger )tag
+{
+    return (UIImageView *)[self viewForTag:tag];
+}
+
 - (UITextField *)textFieldForTag:(NSInteger )tag
 {
     return (UITextField *)[self viewForTag:tag];

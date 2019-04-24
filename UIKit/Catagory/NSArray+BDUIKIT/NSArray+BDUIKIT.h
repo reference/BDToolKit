@@ -27,6 +27,7 @@
 - (UILabel *)labelForTag:(NSInteger )tag;
 - (UIButton *)buttonForTag:(NSInteger )tag;
 - (UITextField *)textFieldForTag:(NSInteger )tag;
+- (UIImageView *)imageViewForTag:(NSInteger )tag;
 - (UISwitch *)switchForTag:(NSInteger )tag;
 - (UITableView *)tableViewForTag:(NSInteger )tag;
 - (UICollectionView *)collectionViewForTag:(NSInteger )tag;
