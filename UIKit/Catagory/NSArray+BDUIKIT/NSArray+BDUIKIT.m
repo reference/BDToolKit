@@ -44,6 +44,16 @@
     return (UISwitch *)[self viewForTag:tag];
 }
 
+- (UITableView *)tableViewForTag:(NSInteger )tag
+{
+    return (UITableView *)[self viewForTag:tag];
+}
+
+- (UICollectionView *)collectionViewForTag:(NSInteger )tag
+{
+    return (UICollectionView *)[self viewForTag:tag];
+}
+
 - (UIView *)viewForTag:(NSInteger )tag
 {
     for (UIView *v in self) {
