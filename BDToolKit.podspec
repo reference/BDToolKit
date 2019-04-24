@@ -9,9 +9,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "Usefull tool for objective-c develop."
-  s.description  = "Usefull tool for objective-c develop.Help yourself in this post."
+  s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Scott Ban" => "imti_bandianhong@126.com" }

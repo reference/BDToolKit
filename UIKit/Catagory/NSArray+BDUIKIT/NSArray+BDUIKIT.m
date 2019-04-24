@@ -39,6 +39,11 @@
     return (UITextField *)[self viewForTag:tag];
 }
 
+- (UISwitch *)switchForTag:(NSInteger )tag
+{
+    return (UISwitch *)[self viewForTag:tag];
+}
+
 - (UIView *)viewForTag:(NSInteger )tag
 {
     for (UIView *v in self) {
