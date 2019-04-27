@@ -7,7 +7,7 @@
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
+ copies of the Software, and to permit BDButtonpersons to whom the Software is
  furnished to do so, subject to the following conditions:
  
  The above copyright notice and this permission notice shall be included in all
@@ -21,16 +21,18 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+#import <UIKit/UIKit.h>
 
-#import "BDView.h"
+@interface UIView(BDCDS)
 
-@implementation BDView
-
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    self.layer.cornerRadius = self.radius;
-    self.layer.masksToBounds = YES;
-}
-
+@property(nonatomic,assign) CGFloat x;
+@property(nonatomic,assign) CGFloat y;
+@property(nonatomic,assign) CGFloat centerX;
+@property(nonatomic,assign) CGFloat centerY;
+@property(nonatomic,assign) CGFloat width;
+@property(nonatomic,assign) CGFloat height;
+@property(nonatomic,assign) CGFloat right;
+@property(nonatomic,assign) CGFloat bottom;
+@property(nonatomic,assign) CGSize size;
+@property(nonatomic,assign) CGPoint origin;
 @end

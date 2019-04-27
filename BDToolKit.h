@@ -37,6 +37,8 @@ SOFTWARE.
 #import "BDButton.h"
 #import "BDImageView.h"
 #import "BDSegmentView.h"
+#import "BDLabel.h"
+#import "BDSegmentView.h"
 
 //catagory
 #import "UIView+BD.h"
@@ -45,5 +47,6 @@ SOFTWARE.
 #import "UILabel+BD.h"
 #import "UITextField+BD.h"
 #import "UITextView+BD.h"
+#import "NSArray+BDUIKIT.h"
 
 #endif /* BDToolKit_h */
