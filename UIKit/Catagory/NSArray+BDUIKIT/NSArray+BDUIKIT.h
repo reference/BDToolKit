@@ -32,10 +32,4 @@
 - (UITableView *)tableViewForTag:(NSInteger )tag;
 - (UICollectionView *)collectionViewForTag:(NSInteger )tag;
 - (UIView *)viewForTag:(NSInteger )tag;
-
-//BDUIKit
-- (BDView *)bdViewForTag:(NSInteger )tag;
-- (BDLabel *)bdLabelForTag:(NSInteger )tag;
-- (BDButton *)bdButtonForTag:(NSInteger )tag;
-- (BDImageView *)bdImageViewForTag:(NSInteger )tag;
 @end

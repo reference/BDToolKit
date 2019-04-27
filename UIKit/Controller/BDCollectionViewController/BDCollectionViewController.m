@@ -29,8 +29,10 @@
 
 @implementation BDCollectionViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.dataArray = [NSMutableArray array];
+- (void)dataArray{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
 }
 @end

@@ -22,6 +22,10 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
+#import "BDView.h"
+#import "BDLabel.h"
+#import "BDButton.h"
+#import "BDImageView.h"
 
 @interface BDTableViewController : UITableViewController
 @property (nonatomic,strong) NSMutableArray *dataArray;
