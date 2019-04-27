@@ -33,4 +33,9 @@
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
 
+//BDUIKit
+@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bdViews;
+@property (nonatomic,strong) IBOutletCollection(BDLabel) NSArray <BDLabel *> *bdLabels;
+@property (nonatomic,strong) IBOutletCollection(BDButton) NSArray <BDButton *> *bdButtons;
+@property (nonatomic,strong) IBOutletCollection(BDImageView) NSArray <BDImageView *> *bdImageViews;
 @end

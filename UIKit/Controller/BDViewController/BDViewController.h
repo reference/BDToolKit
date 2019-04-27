@@ -35,4 +35,10 @@
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
 @property (nonatomic,strong) IBOutletCollection(UITableView) NSArray <UITableView *> *tableViews;
 @property (nonatomic,strong) IBOutletCollection(UICollectionView) NSArray <UICollectionView *> *collectionViews;
+
+//BDUIKit
+@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bdViews;
+@property (nonatomic,strong) IBOutletCollection(BDLabel) NSArray <BDLabel *> *bdLabels;
+@property (nonatomic,strong) IBOutletCollection(BDButton) NSArray <BDButton *> *bdButtons;
+@property (nonatomic,strong) IBOutletCollection(BDImageView) NSArray <BDImageView *> *bdImageViews;
 @end

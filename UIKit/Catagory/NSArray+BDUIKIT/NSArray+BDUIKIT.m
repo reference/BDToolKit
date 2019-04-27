@@ -68,4 +68,24 @@
     }
     return nil;
 }
+
+- (BDView *)bdViewForTag:(NSInteger )tag
+{
+    return (BDView *)[self viewForTag:tag];
+}
+
+- (BDLabel *)bdLabelForTag:(NSInteger )tag
+{
+    return (BDLabel *)[self viewForTag:tag];
+}
+
+- (BDButton *)bdButtonForTag:(NSInteger )tag
+{
+    return (BDButton *)[self viewForTag:tag];
+}
+
+- (BDImageView *)bdImageViewForTag:(NSInteger )tag
+{
+    return (BDImageView *)[self viewForTag:tag];
+}
 @end
