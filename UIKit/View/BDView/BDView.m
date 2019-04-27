@@ -26,11 +26,10 @@
 
 @implementation BDView
 
-- (void)awakeFromNib
+- (void)setRadius:(CGFloat)radius
 {
-    [super awakeFromNib];
-    self.layer.cornerRadius = self.radius;
+    _radius = radius;
+    self.layer.cornerRadius = radius;
     self.layer.masksToBounds = YES;
 }
-
 @end

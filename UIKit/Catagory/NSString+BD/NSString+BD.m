@@ -89,6 +89,11 @@
     }return YES;
 }
 
+- (BOOL)isNotEmpty
+{
+    return ![self isEmpty];
+}
+
 - (BOOL)hasChinese{
     for(int i=0; i< [self length];i++){
         int a = [self characterAtIndex:i];

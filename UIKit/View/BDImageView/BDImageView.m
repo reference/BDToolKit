@@ -26,10 +26,24 @@
 
 @implementation BDImageView
 
-- (void)awakeFromNib
+- (void)setRadius:(CGFloat)radius
 {
-    [super awakeFromNib];
-    self.layer.cornerRadius = self.radius;
+    _radius = radius;
+    self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = YES;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    _borderColor = borderColor;
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.masksToBounds = YES;
+}
+
+- (void)setBorderWidth:(CGFloat)borderWidth
+{
+    _borderWidth = borderWidth;
+    self.layer.borderWidth = borderWidth;
     self.layer.masksToBounds = YES;
 }
 @end

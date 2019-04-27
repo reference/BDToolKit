@@ -29,7 +29,7 @@
 - (BOOL)isBankAccount; // 是否银行卡号
 - (BOOL)hasChinese; // 是否包含中文
 - (BOOL)isEmpty;
-
+- (BOOL)isNotEmpty;
 /**
  判断是否汉语非法字符
  
