@@ -22,10 +22,6 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
-#import "BDView.h"
-#import "BDLabel.h"
-#import "BDButton.h"
-#import "BDImageView.h"
 
 @interface BDTableViewController : UITableViewController
 @property (nonatomic,strong) NSMutableArray *dataArray;
@@ -36,10 +32,4 @@
 @property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
-
-//BDUIKit
-@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bdViews;
-@property (nonatomic,strong) IBOutletCollection(BDLabel) NSArray <BDLabel *> *bdLabels;
-@property (nonatomic,strong) IBOutletCollection(BDButton) NSArray <BDButton *> *bdButtons;
-@property (nonatomic,strong) IBOutletCollection(BDImageView) NSArray <BDImageView *> *bdImageViews;
 @end
