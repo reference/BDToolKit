@@ -47,6 +47,6 @@ SOFTWARE.
 #import "UILabel+BD.h"
 #import "UITextField+BD.h"
 #import "UITextView+BD.h"
-#import "NSArray+BDUIKIT.h"
+#import "UIView+BDCDS.h"
 
 #endif /* BDToolKit_h */
