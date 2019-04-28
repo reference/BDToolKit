@@ -34,4 +34,5 @@
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
 @property (nonatomic,strong) IBOutletCollection(UITableView) NSArray <UITableView *> *tableViews;
 @property (nonatomic,strong) IBOutletCollection(UICollectionView) NSArray <UICollectionView *> *collectionViews;
+@property (nonatomic,strong) IBOutletCollection(UICollectionReusableView) NSArray <UICollectionReusableView *> *collectionReuseableViews;
 @end

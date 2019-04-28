@@ -24,6 +24,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel(BD)
+@property (assign,nonatomic) IBInspectable NSString *textHexColor;
+
 - (void)setFont:(UIFont *)font range:(NSRange)range;
 - (void)setTextColor:(UIColor *)color range:(NSRange)range;
 - (void)setTextColor:(UIColor *)color font:(UIFont *)font range:(NSRange)range;

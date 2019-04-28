@@ -32,5 +32,5 @@
 @property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
-
+@property (nonatomic,strong) IBOutletCollection(UICollectionReusableView) NSArray <UICollectionReusableView *> *collectionReusableViews;
 @end
