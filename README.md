@@ -1,6 +1,6 @@
 # BDToolKit
 
-A development kit for iOS
+Powerfull development kit for iOS.
 
 ## Requirements
 
@@ -11,6 +11,7 @@ A development kit for iOS
 DBToolKit is available through [CocoaPods](https://cocoapods.org/pods/BDToolKit). To install it, simply add the following line to your Podfile:
 
 ```
+use_frameworks!
 pod 'BDToolKit'
 ```
 
@@ -19,6 +20,34 @@ pod 'BDToolKit'
 ```
 #import <BDToolKit/BDToolKit.h>
 ```
+
+## Category
+
+* NSArray+BDUIKIT
+* NSString+BD
+* UILabel+BD
+* UITextField+BD
+* UITextView+BD
+* UIView+BD
+* UIView+BDCDS
+
+## BDUIKit
+
+### Controller
+
+* BDCollectionViewController
+* BDTableViewController
+* BDViewController
+
+### View
+
+* BDButton
+* BDCollectionViewCell
+* BDImageView
+* BDLabel
+* BDSegmentView
+* BDTableViewCell
+* BDView
 
 ## License
 
