@@ -34,6 +34,7 @@ SOFTWARE.
 #import "BDSegmentView.h"
 #import "BDLabel.h"
 #import "BDSegmentView.h"
+#import "BDTextField.h"
 
 //catagory
 #import "UIView+BD.h"
