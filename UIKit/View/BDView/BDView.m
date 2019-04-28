@@ -26,6 +26,13 @@
 
 @implementation BDView
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        self.radius = 0;
+    }return self;
+}
+
 - (void)setRadius:(CGFloat)radius
 {
     _radius = radius;

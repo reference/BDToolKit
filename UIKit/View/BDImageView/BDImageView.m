@@ -26,6 +26,15 @@
 
 @implementation BDImageView
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        self.radius = 0;
+        self.borderColor = [UIColor clearColor];
+        self.borderWidth = 0;
+    }return self;
+}
+
 - (void)setRadius:(CGFloat)radius
 {
     _radius = radius;
