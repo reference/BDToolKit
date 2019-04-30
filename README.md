@@ -8,10 +8,11 @@ Powerfull development kit for iOS.
 
 ## Installation
 
-DBToolKit is available through [CocoaPods](https://cocoapods.org/pods/BDToolKit). To install it, simply add the following line to your Podfile:
+BDToolKit is available through [CocoaPods](https://cocoapods.org/pods/BDToolKit). To install it, simply add the following line to your Podfile:
 
 ```
 use_frameworks!
+
 pod 'BDToolKit'
 ```
 

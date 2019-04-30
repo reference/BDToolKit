@@ -29,6 +29,8 @@
 {
     if (self = [super initWithCoder:aDecoder]) {
         self.radius = 0;
+        self.borderColor = [UIColor clearColor];
+        self.borderWidth = 0;
     }return self;
 }
 
@@ -36,6 +38,20 @@
 {
     _radius = radius;
     self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = YES;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    _borderColor = borderColor;
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.masksToBounds = YES;
+}
+
+- (void)setBorderWidth:(CGFloat)borderWidth
+{
+    _borderWidth = borderWidth;
+    self.layer.borderWidth = borderWidth;
     self.layer.masksToBounds = YES;
 }
 
