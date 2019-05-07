@@ -24,5 +24,10 @@
 #import "BDCollectionViewCell.h"
 
 @implementation BDCollectionViewCell
-
+- (IBAction)onButtons:(UIButton *)btn
+{
+    if (self.onClickedButtons) {
+        self.onClickedButtons(btn.tag);
+    }
+}
 @end

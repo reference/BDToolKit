@@ -25,4 +25,10 @@
 
 @implementation BDTableViewCell
 
+- (IBAction)onButtons:(UIButton *)btn
+{
+    if (self.onClickedButtons) {
+        self.onClickedButtons(btn.tag);
+    }
+}
 @end
