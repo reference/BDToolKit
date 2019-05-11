@@ -50,6 +50,12 @@ pod 'BDToolKit'
 * BDTableViewCell
 * BDView
 
+## Foundation
+
+### Catagory
+
+* NSURLProtocol+WKWebVIew
+
 ## License
 
 `BDToolKit` is available under the MIT license. See the `LICENSE` file for more info.

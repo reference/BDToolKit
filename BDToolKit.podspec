@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "1.2.9"
+  s.version      = "1.3.0"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/reference/BDToolKit.git", :tag => "#{s.version}" }
 
-  s.frameworks = "UIKit", "Foundation"
+  s.frameworks = "UIKit", "Foundation", "WebKit"
   s.requires_arc = true
 
   s.source_files  =  "BDToolKit.h"
@@ -109,4 +109,8 @@ Pod::Spec.new do |s|
         ss.public_header_files = "UIKit/Catagory/UIView+BDCDS/*.h"
     end
 
+    s.subspec "NSURLProtocol+WKWebVIew" do |ss|
+        ss.source_files  = "Foundation/Catagory/NSURLProtocol+WKWebVIew/*.{h,m}"
+        ss.public_header_files = "Foundation/Catagory/NSURLProtocol+WKWebVIew/*.h"
+    end
 end
