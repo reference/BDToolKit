@@ -41,6 +41,10 @@
 
 - (NSString *)trim;
 
+
+/// 是否正确手机号
+- (BOOL)isIllegalPhoneNumber;
+
 //date
 - (NSDate *)dateWithFormat:(NSString *)format;
 @end
