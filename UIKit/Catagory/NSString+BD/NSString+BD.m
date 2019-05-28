@@ -144,7 +144,45 @@
     return NO;
 }
 
+- (BOOL)isBTCValidAddress
+{
+    if (self) {
+        //prefix
+        //prefix
+        if ([self hasPrefix:@"1"]) {
+            //length
+            if (self.length == 34) {
+                return YES;
+            }
+        }
+    }
+    return NO;
+}
 
+- (BOOL)isETHValidAddress
+{
+    if (self) {
+        if ([self hasPrefix:@"0x"]) {
+            //length
+            if (self.length == 42) {
+                return YES;
+            }
+        }
+    }
+    return NO;
+}
+
+- (BOOL)isUSDTValidAddress
+{
+    if (self) {
+        //prefix
+        if ([self hasPrefix:@"1"]) {
+            //length
+            return YES;
+        }
+    }
+    return NO;
+}
 
 - (BOOL)isIllegal
 {

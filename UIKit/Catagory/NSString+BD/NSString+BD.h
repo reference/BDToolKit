@@ -41,6 +41,10 @@
 
 - (NSString *)trim;
 
+//验证地址
+- (BOOL)isBTCValidAddress;
+- (BOOL)isETHValidAddress;
+- (BOOL)isUSDTValidAddress;
 
 /// 是否正确手机号
 - (BOOL)isIllegalPhoneNumber;
