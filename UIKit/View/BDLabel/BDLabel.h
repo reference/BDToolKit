@@ -22,7 +22,7 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
-IB_DESIGNABLE
+//IB_DESIGNABLE
 @interface BDLabel : UILabel
 @property (nonatomic, assign) IBInspectable CGFloat radius;
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
