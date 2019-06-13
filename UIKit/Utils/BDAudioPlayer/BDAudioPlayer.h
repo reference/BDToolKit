@@ -72,11 +72,11 @@ typedef void(^BDCompletionBlock)(BOOL);
  */
 + (AVAudioPlayer *)playFile:(NSString *)name;
 + (AVAudioPlayer *)playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops;
-+ (AVAudioPlayer *) playFile:(NSString *)name withCompletionBlock:(CompletionBlock)completion ;
++ (AVAudioPlayer *) playFile:(NSString *)name withCompletionBlock:(BDCompletionBlock)completion ;
 
 + (AVAudioPlayer *) playLoopedFile:(NSString *) name;
 
 + (void)stopPlayer:(AVAudioPlayer *)player;
 + (void)stopAllPlayers;
-+ (void) playFiles:(NSArray *) filesList withCompletionBlock:(BDCompletionBlock) completion;
++ (void)playFiles:(NSArray *)filesList withCompletionBlock:(BDCompletionBlock) completion;
 @end
