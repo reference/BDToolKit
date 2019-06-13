@@ -36,10 +36,10 @@ typedef enum {
     SoundType_Ball //MTO 收集元素声音
 }SoundType;
 
-typedef void(^CompletionBlock)(BOOL);
+typedef void(^BDCompletionBlock)(BOOL);
 
 @interface AVAudioPlayerWithCompletionBlock : AVAudioPlayer
-@property (nonatomic, copy) CompletionBlock completionBlock;
+@property (nonatomic, copy) BDCompletionBlock completionBlock;
 @end
 
 @interface BDAudioPlayer : NSObject <AVAudioPlayerDelegate> {
@@ -57,14 +57,14 @@ typedef void(^CompletionBlock)(BOOL);
 
 /*
  The method
- + (AVAudioPlayer *) playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops withCompletionBlock:(CompletionBlock)completion;
+ + (AVAudioPlayer *) playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops withCompletionBlock:(BDCompletionBlock)completion;
  
  the loops parameter works like this:
  any negative number - sound keeps playing in a loop over and over
  0, 1 - sound is played once
  2, 3, etc - sound is played twice, 3 times, etc-times :)
  */
-+ (AVAudioPlayer *) playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops withCompletionBlock:(CompletionBlock)completion;
++ (AVAudioPlayer *) playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops withCompletionBlock:(BDCompletionBlock)completion;
 
 /*
  The methods below just call the
@@ -78,5 +78,5 @@ typedef void(^CompletionBlock)(BOOL);
 
 + (void)stopPlayer:(AVAudioPlayer *)player;
 + (void)stopAllPlayers;
-+ (void) playFiles:(NSArray *) filesList withCompletionBlock:(CompletionBlock) completion;
++ (void) playFiles:(NSArray *) filesList withCompletionBlock:(BDCompletionBlock) completion;
 @end

@@ -112,7 +112,7 @@ static BDAudioPlayer *sharedInstance = nil;
 }
 
 
-- (AVAudioPlayer *) playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops withCompletionBlock:(CompletionBlock)completion
+- (AVAudioPlayer *) playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops withCompletionBlock:(BDCompletionBlock)completion
 {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:name ofType:nil];
 	if(!filePath) {
@@ -139,7 +139,7 @@ static BDAudioPlayer *sharedInstance = nil;
 	return nil;
     
 }
-- (void) playFiles:(NSArray*) filesList withCompletionBlock:(CompletionBlock) completion
+- (void) playFiles:(NSArray*) filesList withCompletionBlock:(BDCompletionBlock) completion
 {
     __block int idx = 0;
     __block void(^playBlock)(void);
@@ -167,7 +167,7 @@ static BDAudioPlayer *sharedInstance = nil;
 - (AVAudioPlayer *) playLoopedFile:(NSString *) name {
     return [self playFile:name volume:1.0f loops:-1];
 }
-- (AVAudioPlayer *) playFile:(NSString *)name withCompletionBlock:(CompletionBlock)completion
+- (AVAudioPlayer *) playFile:(NSString *)name withCompletionBlock:(BDCompletionBlock)completion
 {
     return [self playFile:name volume:1.0f loops:0 withCompletionBlock:completion];
 }
@@ -215,11 +215,11 @@ static BDAudioPlayer *sharedInstance = nil;
 + (AVAudioPlayer *)playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops {
 	return [[BDAudioPlayer shared] playFile:name volume:vol loops:loops];
 }
-+ (AVAudioPlayer *) playFile:(NSString *)name withCompletionBlock:(CompletionBlock)completion
++ (AVAudioPlayer *) playFile:(NSString *)name withCompletionBlock:(BDCompletionBlock)completion
 {
     return [[BDAudioPlayer shared] playFile:name withCompletionBlock:completion];
 }
-+ (AVAudioPlayer *) playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops withCompletionBlock:(CompletionBlock)completion
++ (AVAudioPlayer *) playFile:(NSString *)name volume:(CGFloat)vol loops:(NSInteger)loops withCompletionBlock:(BDCompletionBlock)completion
 {
     return [[BDAudioPlayer shared] playFile:name volume:vol loops:loops withCompletionBlock:completion];
 }
@@ -233,7 +233,7 @@ static BDAudioPlayer *sharedInstance = nil;
 + (void)stopAllPlayers {
     return [[BDAudioPlayer shared] stopAllPlayers];
 }
-+ (void) playFiles:(NSArray *)filesList withCompletionBlock:(CompletionBlock)completion
++ (void) playFiles:(NSArray *)filesList withCompletionBlock:(BDCompletionBlock)completion
 {
     [[BDAudioPlayer shared] playFiles:filesList withCompletionBlock:completion];
 }
