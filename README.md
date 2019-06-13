@@ -50,6 +50,9 @@ pod 'BDToolKit'
 * BDTableViewCell
 * BDView
 
+### Utils
+* BDAudioPlayer
+
 ## Foundation
 
 ### Catagory

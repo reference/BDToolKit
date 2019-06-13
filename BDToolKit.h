@@ -51,6 +51,9 @@ SOFTWARE.
 #import "BDTableViewController.h"
 #import "BDCollectionViewController.h"
 
+//Utils
+#import "BDAudioPlayer.h"
+
 /// FOUNDATION
 
 //catagory
