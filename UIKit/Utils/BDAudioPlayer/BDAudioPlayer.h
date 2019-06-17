@@ -38,7 +38,7 @@ typedef enum {
 
 typedef void(^BDCompletionBlock)(BOOL);
 
-@interface AVAudioPlayerWithCompletionBlock : AVAudioPlayer
+@interface BDAVAudioPlayerWithCompletionBlock : AVAudioPlayer
 @property (nonatomic, copy) BDCompletionBlock completionBlock;
 @end
 

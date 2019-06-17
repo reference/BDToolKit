@@ -24,7 +24,7 @@
 
 #import "BDAudioPlayer.h"
 
-@implementation AVAudioPlayerWithCompletionBlock
+@implementation BDAVAudioPlayerWithCompletionBlock
 
 @end
 
@@ -121,7 +121,7 @@ static BDAudioPlayer *sharedInstance = nil;
 	
 	NSError *error = nil;
 	NSURL *fileURL = [NSURL fileURLWithPath:filePath isDirectory:NO];
-	AVAudioPlayerWithCompletionBlock *player = [[AVAudioPlayerWithCompletionBlock alloc] initWithContentsOfURL:fileURL error:&error];
+	BDAVAudioPlayerWithCompletionBlock *player = [[BDAVAudioPlayerWithCompletionBlock alloc] initWithContentsOfURL:fileURL error:&error];
 	player.volume = vol;
 	player.numberOfLoops = loops;
 	// Retain and play
@@ -193,7 +193,7 @@ static BDAudioPlayer *sharedInstance = nil;
     }
 }
 
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayerWithCompletionBlock *)player successfully:(BOOL)completed {
+- (void)audioPlayerDidFinishPlaying:(BDAVAudioPlayerWithCompletionBlock *)player successfully:(BOOL)completed {
     
 	if (player.completionBlock) {
         player.completionBlock ( completed );
