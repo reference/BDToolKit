@@ -25,16 +25,16 @@
 #import <AVFoundation/AVFoundation.h>
 
 typedef enum {
-    SoundType_ShakePeek = 0,//轻微震动
-    SoundType_ThreeTimes,//震动三次
-    SoundType_Slip,//滑入
-    SoundType_GoldFall,//金币掉落
-    SoundType_Tap,//打字
-    SoundType_Suprise,//中奖 superise
-    SoundType_Airdrop,  //空投
-    SoundType_Error,//错误提示音
-    SoundType_Ball //MTO 收集元素声音
-}SoundType;
+    BDSoundType_ShakePeek = 0,//轻微震动
+    BDSoundType_ThreeTimes,//震动三次
+    BDSoundType_Slip,//滑入
+    BDSoundType_GoldFall,//金币掉落
+    BDSoundType_Tap,//打字
+    BDSoundType_Suprise,//中奖 superise
+    BDSoundType_Airdrop,  //空投
+    BDSoundType_Error,//错误提示音
+    BDSoundType_Ball //MTO 收集元素声音
+}BDSoundType;
 
 typedef void(^BDCompletionBlock)(BOOL);
 
@@ -53,7 +53,7 @@ typedef void(^BDCompletionBlock)(BOOL);
 
  @param type sound type
  */
-+ (void)playSoundWithType:(SoundType)type;
++ (void)playSoundWithType:(BDSoundType)type;
 
 /*
  The method

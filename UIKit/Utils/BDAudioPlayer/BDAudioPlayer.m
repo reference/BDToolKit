@@ -44,36 +44,36 @@ static BDAudioPlayer *sharedInstance = nil;
     return sharedInstance;
 }
 
-+ (void)playSoundWithType:(SoundType)type
++ (void)playSoundWithType:(BDSoundType)type
 {
     switch (type) {
-        case SoundType_ShakePeek:
+        case BDSoundType_ShakePeek:
             //短震  3D Touch中的peek震动反馈
             AudioServicesPlaySystemSound(1519);
             break;
-        case SoundType_ThreeTimes:
+        case BDSoundType_ThreeTimes:
             //连续三次短震动
             AudioServicesPlaySystemSound(1521);
             break;
-        case SoundType_Slip:
+        case BDSoundType_Slip:
             [BDAudioPlayer playFile:@"slip.mp3"];
             break;
-        case SoundType_GoldFall:
+        case BDSoundType_GoldFall:
             [BDAudioPlayer playFile:@"goldfall.mp3"];
             break;
-        case SoundType_Tap:
+        case BDSoundType_Tap:
             [BDAudioPlayer playFile:@"tap.mp3"];
             break;
-        case SoundType_Suprise:
+        case BDSoundType_Suprise:
             [BDAudioPlayer playFile:@"superise.mp3"];
             break;
-        case SoundType_Airdrop:
+        case BDSoundType_Airdrop:
             [BDAudioPlayer playFile:@"airdrop.mp3"];
             break;
-        case SoundType_Error:
+        case BDSoundType_Error:
             [BDAudioPlayer playFile:@"error.mp3"];
             break;
-        case SoundType_Ball:
+        case BDSoundType_Ball:
             [BDAudioPlayer playFile:@"ball.mp3"];
             break;
         default:
