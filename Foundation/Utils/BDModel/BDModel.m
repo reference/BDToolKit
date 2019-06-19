@@ -32,4 +32,11 @@
     return m;
 }
 
++ (id)modelWithIdentifier:(NSString *)identifier data:(id)data
+{
+    BDModel *m = [BDModel new];
+    m.identifier = identifier;
+    m.data = data;
+    return m;
+}
 @end

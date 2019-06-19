@@ -25,6 +25,8 @@
 
 @interface BDModel : NSObject
 @property (nonatomic,strong) NSString *identifier;
+@property (nonatomic,strong) id data;
 
 + (id)modelWithIdentifier:(NSString *)identifier;
++ (id)modelWithIdentifier:(NSString *)identifier data:(id)data;
 @end
