@@ -46,6 +46,7 @@ SOFTWARE.
 #import "UITextField+BD.h"
 #import "UITextView+BD.h"
 #import "UIView+BDCDS.h"
+#import "UIView+BDAnimation.h"
 
 //controllers
 #import "BDViewController.h"

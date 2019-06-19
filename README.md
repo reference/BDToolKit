@@ -31,6 +31,7 @@ pod 'BDToolKit'
 * UITextView+BD
 * UIView+BD
 * UIView+BDCDS
+* UIView+BDAnimation
 
 ## BDUIKit
 
