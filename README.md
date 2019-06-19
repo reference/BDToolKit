@@ -56,6 +56,8 @@ pod 'BDToolKit'
 
 ## Foundation
 
+* BDModel
+
 ### Catagory
 
 * NSURLProtocol+WKWebVIew

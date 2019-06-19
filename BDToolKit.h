@@ -56,6 +56,7 @@ SOFTWARE.
 #import "BDAudioPlayer.h"
 
 /// FOUNDATION
+#import "BDModel.h"
 
 //catagory
 #import "NSURLProtocol+WKWebVIew.h"

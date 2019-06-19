@@ -33,4 +33,5 @@
 @property (nonatomic,copy) void (^onClickedButtons)(NSInteger tag);
 
 - (IBAction)onButtons:(UIButton *)btn;
++ (id)cellWithReuseIdentifier:(NSString *)identifier forTableView:(UITableView *)tableView;
 @end

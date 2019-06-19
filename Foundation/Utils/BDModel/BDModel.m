@@ -21,19 +21,15 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-#import "BDTableViewCell.h"
+#import "BDModel.h"
 
-@implementation BDTableViewCell
+@implementation BDModel
 
-- (IBAction)onButtons:(UIButton *)btn
++ (id)modelWithIdentifier:(NSString *)identifier
 {
-    if (self.onClickedButtons) {
-        self.onClickedButtons(btn.tag);
-    }
+    BDModel *m = [BDModel new];
+    m.identifier = identifier;
+    return m;
 }
 
-+ (id)cellWithReuseIdentifier:(NSString *)identifier forTableView:(UITableView *)tableView
-{
-    return [tableView dequeueReusableCellWithIdentifier:identifier];
-}
 @end
