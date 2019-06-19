@@ -49,6 +49,7 @@ pod 'BDToolKit'
 * BDSegmentView
 * BDTableViewCell
 * BDView
+* BDFreeStyleButton
 
 ### Utils
 * BDAudioPlayer
