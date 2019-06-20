@@ -57,6 +57,7 @@ pod 'BDToolKit'
 
 ## Foundation
 
+* BDArray
 * BDModel
 
 ### Catagory

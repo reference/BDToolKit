@@ -21,18 +21,8 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+#import "BDArray.h"
 
-#import "BDViewController.h"
+@implementation BDArray
 
-@interface BDViewController ()
-
-@end
-
-@implementation BDViewController
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.dataArray = [NSMutableArray array];
-    self.array = [BDArray array];
-}
 @end
