@@ -58,6 +58,7 @@ SOFTWARE.
 
 /// FOUNDATION
 #import "BDModel.h"
+#import "BDArray.h"
 
 //catagory
 #import "NSURLProtocol+WKWebVIew.h"
