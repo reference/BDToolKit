@@ -32,6 +32,7 @@
         self.radius = 0;
         self.borderColor = [UIColor clearColor];
         self.borderWidth = 0;
+        self.identifier = nil;
     }return self;
 }
 

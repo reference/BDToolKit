@@ -31,6 +31,7 @@
 @property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,copy) void (^onClickedButtons)(NSInteger tag);
+@property (nonatomic,copy) void (^onClickedButtonsCallback)(UIButton *btn);
 
 - (IBAction)onButtons:(UIButton *)btn;
 + (id)cellWithReuseIdentifier:(NSString *)identifier forTableView:(UITableView *)tableView;

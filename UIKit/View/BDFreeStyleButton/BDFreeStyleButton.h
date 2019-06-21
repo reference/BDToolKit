@@ -25,5 +25,6 @@
 
 @interface BDFreeStyleButton : BDView
 @property (nonatomic,strong) NSString *title;
+@property (nonatomic,strong) IBInspectable NSString *identifier;
 @property (nonatomic,copy) void (^pressed)(void);
 @end

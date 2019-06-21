@@ -27,4 +27,5 @@
 @property (nonatomic, assign) IBInspectable CGFloat radius;
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;
+@property (nonatomic, strong) IBInspectable NSString *identifier;
 @end

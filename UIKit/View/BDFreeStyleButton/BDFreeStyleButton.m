@@ -29,6 +29,7 @@
 {
     _title = title;
     self.labels.firstObject.text = title;
+    self.identifier = nil;
 }
 
 - (IBAction)onClick:(id)sender
