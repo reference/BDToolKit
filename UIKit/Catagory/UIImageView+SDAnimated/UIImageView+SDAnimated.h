@@ -22,6 +22,7 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
+#import <SDWebImage/SDWebImage.h>
 
 @interface UIImageView (SDAnimated)
 
