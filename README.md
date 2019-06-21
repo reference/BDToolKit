@@ -57,12 +57,13 @@ pod 'BDToolKit'
 
 ## Foundation
 
-* BDArray
 * BDModel
 
 ### Catagory
 
 * NSURLProtocol+WKWebVIew
+* NSArray+Identifier
+* NSObject+Identifier
 
 ## License
 

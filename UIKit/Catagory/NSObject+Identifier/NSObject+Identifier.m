@@ -21,8 +21,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-#import "BDArray.h"
+#import "NSObject+Identifier.h"
 
-@implementation BDArray
-
+@implementation NSObject(Identifier)
 @end

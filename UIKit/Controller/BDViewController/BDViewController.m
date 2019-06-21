@@ -33,6 +33,5 @@
 {
     [super viewDidLoad];
     self.dataArray = [NSMutableArray array];
-    self.array = [BDArray array];
 }
 @end

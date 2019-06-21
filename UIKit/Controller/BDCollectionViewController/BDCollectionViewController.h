@@ -26,7 +26,6 @@
 
 @interface BDCollectionViewController : UICollectionViewController
 @property (nonatomic,strong) NSMutableArray *dataArray;
-@property (nonatomic,strong) BDArray *array;
 @property (nonatomic,strong) IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
 @property (nonatomic,strong) IBOutletCollection(UIImageView) NSArray <UIImageView *> *imageViews;
 @property (nonatomic,strong) IBOutletCollection(UIView) NSArray <UIView *> *views;

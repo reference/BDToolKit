@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "1.5.1"
+  s.version      = "1.5.2"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -24,25 +24,26 @@ Pod::Spec.new do |s|
   s.source_files  =  "BDToolKit.h"
   s.public_header_files = "BDToolKit.h"
 
-    s.subspec "BDArray" do |ss|
-        ss.source_files  = "Foundation/BDFoundation/BDArray/*.{h,m}"
-        ss.public_header_files = "Foundation/BDFoundation/BDArray/*.h"
+    s.subspec "NSObject+Identifier" do |ss|
+        ss.source_files  = "UIKit/Catagory/NSObject+Identifier/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSObject+Identifier/*.h"
+    end
+    s.subspec "NSArray+Identifier" do |ss|
+        ss.source_files  = "UIKit/Catagory/NSArray+Identifier/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSArray+Identifier/*.h"
     end
 
     s.subspec "BDViewController" do |ss|
-        ss.dependency 'BDToolKit/BDArray'
         ss.source_files  = "UIKit/Controller/BDViewController/*.{h,m}"
         ss.public_header_files = "UIKit/Controller/BDViewController/*.h"
     end
 
     s.subspec "BDTableViewController" do |ss|
-        ss.dependency 'BDToolKit/BDArray'
         ss.source_files  = "UIKit/Controller/BDTableViewController/*.{h,m}"
         ss.public_header_files = "UIKit/Controller/BDTableViewController/*.h"
     end
 
     s.subspec "BDCollectionViewController" do |ss|
-        ss.dependency 'BDToolKit/BDArray'
         ss.source_files  = "UIKit/Controller/BDCollectionViewController/*.{h,m}"
         ss.public_header_files = "UIKit/Controller/BDCollectionViewController/*.h"
     end

@@ -58,9 +58,10 @@ SOFTWARE.
 
 /// FOUNDATION
 #import "BDModel.h"
-#import "BDArray.h"
 
 //catagory
 #import "NSURLProtocol+WKWebVIew.h"
+#import "NSArray+Identifier.h"
+#import "NSObject+Identifier.h"
 
 #endif /* BDToolKit_h */
