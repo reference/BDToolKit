@@ -22,10 +22,10 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
-#import <SDWebImage/SDWebImage.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface UIImageView (SDAnimated)
 
-- (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage * _Nullable)placeholder  duration:(NSTimeInterval)duration;
+- (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder  duration:(NSTimeInterval)duration;
 
 @end
