@@ -22,7 +22,6 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
-#import "BDArray.h"
 
 @interface BDCollectionViewController : UICollectionViewController
 @property (nonatomic,strong) NSMutableArray *dataArray;

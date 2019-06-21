@@ -24,4 +24,8 @@
 #import "NSArray+Identifier.h"
 
 @implementation NSArray(Identifier)
+- (void)setIdentifier:(NSString *)identifier
+{
+    _identifier = identifier;
+}
 @end

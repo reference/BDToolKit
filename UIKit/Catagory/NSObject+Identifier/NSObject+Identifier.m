@@ -24,4 +24,8 @@
 #import "NSObject+Identifier.h"
 
 @implementation NSObject(Identifier)
+- (void)setIdentifier:(NSString *)identifier
+{
+    _identifier = identifier;
+}
 @end

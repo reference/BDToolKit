@@ -23,7 +23,6 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "BDArray.h"
 
 @interface BDViewController : UIViewController
 @property (nonatomic,strong) NSMutableArray *dataArray;
