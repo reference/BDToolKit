@@ -48,6 +48,7 @@ SOFTWARE.
 #import "UIView+BDCDS.h"
 #import "UIView+BDAnimation.h"
 #import "UIView+Tag.h"
+#import "UIImageView+SDAnimated.h"
 
 //controllers
 #import "BDViewController.h"

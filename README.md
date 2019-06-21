@@ -33,6 +33,7 @@ pod 'BDToolKit'
 * UIView+BDCDS
 * UIView+BDAnimation
 * UIView+Tag
+* UIImageView+SDAnimated
 
 ## BDUIKit
 
