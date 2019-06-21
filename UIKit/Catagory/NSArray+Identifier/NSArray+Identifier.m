@@ -22,10 +22,18 @@
  SOFTWARE.
  */
 #import "NSArray+Identifier.h"
+#import <objc/runtime.h>
 
+static const char *kidentifier = "kidentifier";
 @implementation NSArray(Identifier)
+
+- (NSString *)identifier
+{
+    return objc_getAssociatedObject(self, kidentifier);
+}
+
 - (void)setIdentifier:(NSString *)identifier
 {
-    _identifier = identifier;
+    objc_setAssociatedObject(self,kidentifier, identifier,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 @end
