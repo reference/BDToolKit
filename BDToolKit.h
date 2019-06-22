@@ -49,6 +49,8 @@ SOFTWARE.
 #import "UIView+BDAnimation.h"
 #import "UIView+Tag.h"
 #import "UIImageView+SDAnimated.h"
+#import "UILabel+NSNumberFormat.h"
+#import "NSNumber+NumerFormat.h"
 
 //controllers
 #import "BDViewController.h"
