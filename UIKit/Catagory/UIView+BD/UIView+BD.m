@@ -23,6 +23,10 @@
  */
 
 #import "UIView+BD.h"
+#import <objc/runtime.h>
+
+static const char *kGradientHexColors = "kGradientHexColors";
+static const char *kGradientLocations = "kGradientLocations";
 
 @implementation UIView(BD)
 
@@ -45,6 +49,26 @@
     [shape setPath:rounded.CGPath];
     
     self.layer.mask = shape;
+}
+
+- (NSArray *)gradientHexColors
+{
+    return objc_getAssociatedObject(self, kGradientHexColors);
+}
+
+- (void)setGradientHexColors:(NSArray *)gradientHexColors
+{
+    objc_setAssociatedObject(self,kGradientHexColors, gradientHexColors,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSArray *)gradientLocations
+{
+    return objc_getAssociatedObject(self, kGradientLocations);
+}
+
+- (void)setGradientLocations:(NSArray *)gradientLocations
+{
+    objc_setAssociatedObject(self,kGradientLocations, gradientLocations,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end
