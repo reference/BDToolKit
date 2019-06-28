@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "1.6.1"
+  s.version      = "1.6.2"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec "UIImageView+SDAnimated" do |ss|
-        ss.dependency 'SDWebImage' , :git => 'https://github.com/SDWebImage/SDWebImage.git'
+        ss.dependency 'SDWebImage', :git => 'https://github.com/SDWebImage/SDWebImage.git'
         ss.source_files  = "UIKit/Catagory/UIImageView+SDAnimated/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UIImageView+SDAnimated/*.h"
     end
