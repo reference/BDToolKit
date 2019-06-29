@@ -51,6 +51,16 @@ static const char *kGradientLocations = "kGradientLocations";
     self.layer.mask = shape;
 }
 
+- (CGFlot)radius
+{
+    return [objc_getAssociatedObject(self, @selector(radius)) doubleValue];
+}
+
+- (void)setRadius:(CGFlot)radius
+{
+    objc_setAssociatedObject(self, @selector(radius), @(radius), OBJC_ASSOCIATION_ASSIGN);
+}
+
 - (NSArray *)gradientHexColors
 {
     return objc_getAssociatedObject(self, kGradientHexColors);

@@ -26,6 +26,8 @@
 
 @interface UIView(BD)
 
+@property (nonatomic, assign) IBInspectable CGFloat radius;
+
 /**
  *  设置部分圆角(绝对布局)
  *
