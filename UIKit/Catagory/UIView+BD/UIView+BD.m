@@ -27,6 +27,7 @@
 
 static const char *kGradientHexColors = "kGradientHexColors";
 static const char *kGradientLocations = "kGradientLocations";
+static const char *kRadius = "kBAJadius";
 
 @implementation UIView(BD)
 
@@ -53,12 +54,12 @@ static const char *kGradientLocations = "kGradientLocations";
 
 - (CGFlot)radius
 {
-    return [objc_getAssociatedObject(self, @selector(radius)) doubleValue];
+    return [objc_getAssociatedObject(self, kRadius) doubleValue];
 }
 
 - (void)setRadius:(CGFlot)radius
 {
-    objc_setAssociatedObject(self, @selector(radius), @(radius), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self,kRadius, @(radius),OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (NSArray *)gradientHexColors
