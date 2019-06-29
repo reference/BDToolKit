@@ -51,12 +51,12 @@ static const char *kGradientLocations = "kGradientLocations";
     self.layer.mask = shape;
 }
 
-- (CGFlot)radius
+- (CGFloat)radius
 {
     return self.layer.cornerRadius;
 }
 
-- (void)setRadius:(CGFlot)radius
+- (void)setRadius:(CGFloat)radius
 {
     self.layer.cornerRadius = radius;
 }

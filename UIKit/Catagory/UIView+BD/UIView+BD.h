@@ -23,6 +23,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartCore.h>
 
 @interface UIView(BD)
 
