@@ -23,13 +23,13 @@
  */
 
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartCore.h>
+//#import <QuartzCore/QuartCore.h>
 
 @interface UIView(BD)
 
-@property (nonatomic,assign) IBInspectable NSInteger cornerRadius;
-@property (nonatomic,assign) IBInspectable NSInteger borderWidth;
-@property (nonatomic,assign) IBInspectable UIColor  *borderColor;
+//@property (nonatomic,assign) IBInspectable NSInteger cornerRadius;
+//@property (nonatomic,assign) IBInspectable NSInteger borderWidth;
+//@property (nonatomic,assign) IBInspectable UIColor  *borderColor;
 
 /**
  *  设置部分圆角(绝对布局)
