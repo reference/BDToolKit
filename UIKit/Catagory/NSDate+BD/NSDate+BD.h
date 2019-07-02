@@ -21,36 +21,15 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+#import <Foundation/Foundation.h>
 
-#import <UIKit/UIKit.h>
+@interface NSDate(BD)
 
-@interface NSString(BD)
-- (BOOL)isNumber; //是否数字
-- (BOOL)isBankAccount; // 是否银行卡号
-- (BOOL)hasChinese; // 是否包含中文
-- (BOOL)isEmpty;
-- (BOOL)isNotEmpty;
 /**
- 判断是否汉语非法字符
- 
- 非法字符是指 除数字 字母以外的所有字符
- @see https://blog.csdn.net/u013773524/article/details/51437327
- @return YES 有 NO 没有.
+ 计算两个日期之间的天数
+
+ @param d 日期
+ @return 天数
  */
-- (BOOL)isIllegal;
-
-- (NSString *)trim;
-
-//localized
-- (NSString *)localizedString;
-//验证地址
-- (BOOL)isBTCValidAddress;
-- (BOOL)isETHValidAddress;
-- (BOOL)isUSDTValidAddress;
-
-/// 是否正确手机号
-- (BOOL)isIllegalPhoneNumber;
-
-//date
-- (NSDate *)dateWithFormat:(NSString *)format;
+- (NSInteger)daysFromDate:(NSDate *)d;
 @end

@@ -50,6 +50,7 @@ SOFTWARE.
 #import "UIView+Tag.h"
 #import "UILabel+NSNumberFormat.h"
 #import "NSNumber+NumerFormat.h"
+#import "NSDate+BD.h"
 
 //controllers
 #import "BDViewController.h"

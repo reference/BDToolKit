@@ -84,8 +84,8 @@
 
 - (BOOL)isEmpty
 {
-    if (self) {
-        return self.length == 0;
+    if (nil != self) {
+        return self.length < 1;
     }return YES;
 }
 
@@ -197,6 +197,11 @@
 - (NSString *)trim
 {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+}
+
+- (NSString *)localizedString
+{
+    return NSLocalizedString(self, nil);
 }
 
 //date
