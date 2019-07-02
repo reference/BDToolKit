@@ -51,6 +51,7 @@ SOFTWARE.
 #import "UILabel+NSNumberFormat.h"
 #import "NSNumber+NumerFormat.h"
 #import "NSDate+BD.h"
+#import "NSObject+BD.h"
 
 //controllers
 #import "BDViewController.h"

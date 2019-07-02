@@ -36,6 +36,8 @@ pod 'BDToolKit'
 * UIImageView+SDAnimated
 * UILabel+NSNumberFormat
 * NSNumber+NumerFormat
+* NSDate+BD
+* NSObject+BD
 
 ## BDUIKit
 
