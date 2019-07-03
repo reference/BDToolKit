@@ -36,6 +36,18 @@
 
 - (void)performSegueWithClass:(Class)cls sender:(id)sender
 {
-    [self performSegueWithIdentifier:NSStringFromClass(cls) sender:nil];
+    [self performSegueWithIdentifier:NSStringFromClass(cls) sender:sender];
+}
+
+- (void)performSegueWithClass:(Class)cls sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback
+{
+    self.prepareForSegueBlock = prepareCallback;
+    [self performSegueWithClass:cls sender:sender];
+}
+
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback
+{
+    self.prepareForSegueBlock = prepareCallback;
+    [self performSegueWithIdentifier:identifier sender:sender];
 }
 @end

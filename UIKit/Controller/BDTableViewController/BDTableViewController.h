@@ -23,7 +23,11 @@
  */
 #import <UIKit/UIKit.h>
 
+//prepare block
+typedef void (^PrepareForSegueBlock)(UIViewController *viewController, id sender);
+
 @interface BDTableViewController : UITableViewController
+@property (nonatomic,copy) PrepareForSegueBlock prepareForSegueBlock;
 @property (nonatomic,strong) NSMutableArray *dataArray;
 @property (nonatomic,strong) IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
 @property (nonatomic,strong) IBOutletCollection(UIImageView) NSArray <UIImageView *> *imageViews;
@@ -35,4 +39,6 @@
 
 /// perform segue with class
 - (void)performSegueWithClass:(Class)cls sender:(id)sender;
+- (void)performSegueWithClass:(Class)cls sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback;
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback;
 @end
