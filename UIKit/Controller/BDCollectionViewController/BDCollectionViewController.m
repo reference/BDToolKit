@@ -34,6 +34,13 @@
     self.dataArray = [NSMutableArray array];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if (self.prepareForSegueBlock) {
+        self.prepareForSegueBlock(segue.destinationViewController, sender);
+    }
+}
+
 - (void)performSegueWithClass:(Class)cls sender:(id)sender
 {
     [self performSegueWithIdentifier:NSStringFromClass(cls) sender:sender];
