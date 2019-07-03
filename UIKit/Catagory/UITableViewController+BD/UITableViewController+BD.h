@@ -21,18 +21,12 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+
 #import <UIKit/UIKit.h>
 
-@interface BDTableViewController : UITableViewController
-@property (nonatomic,strong) NSMutableArray *dataArray;
-@property (nonatomic,strong) IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
-@property (nonatomic,strong) IBOutletCollection(UIImageView) NSArray <UIImageView *> *imageViews;
-@property (nonatomic,strong) IBOutletCollection(UIView) NSArray <UIView *> *views;
-@property (nonatomic,strong) IBOutletCollection(UIButton) NSArray <UIButton *> *buttons;
-@property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
-@property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
-@property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
+@interface UITableViewController(BD)
 
 /// perform segue with class
 - (void)performSegueWithClass:(Class)cls sender:(id)sender;
+
 @end

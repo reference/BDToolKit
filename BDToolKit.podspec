@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "1.7.3"
+  s.version      = "1.7.4"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -27,6 +27,21 @@ Pod::Spec.new do |s|
     s.subspec "UILabel+NSNumberFormat" do |ss|
         ss.source_files  = "UIKit/Catagory/UILabel+NSNumberFormat/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UILabel+NSNumberFormat/*.h"
+    end
+
+    s.subspec "UIViewController+BD" do |ss|
+        ss.source_files  = "UIKit/Catagory/UIViewController+BD/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UIViewController+BD/*.h"
+    end
+
+    s.subspec "UITableViewController+BD" do |ss|
+        ss.source_files  = "UIKit/Catagory/UITableViewController+BD/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UITableViewController+BD/*.h"
+    end
+
+    s.subspec "UICollectionViewController+BD" do |ss|
+        ss.source_files  = "UIKit/Catagory/UICollectionViewController+BD/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UICollectionViewController+BD/*.h"
     end
 
     s.subspec "NSDate+BD" do |ss|

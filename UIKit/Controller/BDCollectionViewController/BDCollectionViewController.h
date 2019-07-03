@@ -33,4 +33,8 @@
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
 @property (nonatomic,strong) IBOutletCollection(UICollectionReusableView) NSArray <UICollectionReusableView *> *collectionReusableViews;
+
+/// perform segue with class
+- (void)performSegueWithClass:(Class)cls sender:(id)sender;
+
 @end

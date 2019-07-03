@@ -33,4 +33,9 @@
     [super viewDidLoad];
     self.dataArray = [NSMutableArray array];
 }
+
+- (void)performSegueWithClass:(Class)cls sender:(id)sender
+{
+    [self performSegueWithIdentifier:NSStringFromClass(cls) sender:nil];
+}
 @end
