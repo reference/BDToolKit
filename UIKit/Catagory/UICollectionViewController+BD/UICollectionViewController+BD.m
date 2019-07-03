@@ -28,7 +28,7 @@
 
 - (void)performSegueWithClass:(Class)cls sender:(id)sender
 {
-    [self performSegueWithIdentifier:NSStringFromClass(cls) sender:nil];
+    [self performSegueWithIdentifier:NSStringFromClass(cls) sender:sender];
 }
 
 @end
