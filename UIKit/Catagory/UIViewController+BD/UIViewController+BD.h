@@ -34,4 +34,5 @@
 
 /// push view controller
 - (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName;
+- (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName block:(void(^)(UIViewController *vc))block;
 @end

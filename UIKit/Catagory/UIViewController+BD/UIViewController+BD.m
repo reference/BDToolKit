@@ -44,4 +44,14 @@
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass(cls)];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName block:(void(^)(UIViewController *vc))block
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass(cls)];
+    if (block) {
+        block(vc);
+    }
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end
