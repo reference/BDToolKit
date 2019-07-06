@@ -29,4 +29,7 @@
 /// perform segue with class
 - (void)performSegueWithClass:(Class)cls sender:(id)sender;
 
+/// present navigation controller in storyboard
+- (void)presentNavigationViewController:(NSString *)navControllerName inStoryboard:(NSString *)storyboardName;
+
 @end

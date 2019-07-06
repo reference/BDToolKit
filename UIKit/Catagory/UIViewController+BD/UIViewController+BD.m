@@ -31,4 +31,10 @@
     [self performSegueWithIdentifier:NSStringFromClass(cls) sender:sender];
 }
 
+- (void)presentNavigationViewController:(NSString *)navControllerName inStoryboard:(NSString *)storyboardName
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    UINavigationController *nv = [sb instantiateViewControllerWithIdentifier:navControllerName];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nv animated:YES completion:nil];
+}
 @end
