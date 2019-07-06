@@ -55,6 +55,8 @@ SOFTWARE.
 #import "UIViewController+BD.h"
 #import "UITableViewController+BD.h"
 #import "UICollectionViewController+BD.h"
+#import "UIButton+BD.h"
+#import "UIView+Tap.h"
 
 
 //controllers

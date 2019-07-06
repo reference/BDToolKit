@@ -41,6 +41,8 @@ pod 'BDToolKit'
 * UIViewController+BD
 * UITableViewController+BD
 * UICollectionViewController+BD
+* UIButton+BD
+* UIView+Tap
 
 ## BDUIKit
 
