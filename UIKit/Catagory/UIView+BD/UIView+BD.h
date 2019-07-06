@@ -47,15 +47,6 @@
                  viewRect:(CGRect)rect;
 
 /**
- 渐变色组，用逗号分隔
- */
-@property (nonatomic,strong) IBInspectable NSArray *gradientHexColors;
-/**
- 渐变色位置，用逗号分隔
- */
-@property (nonatomic,strong) IBInspectable NSArray *gradientLocations;
-
-/**
  *  设置圆角
  *
  *  @param cornerRadius 圆角大小

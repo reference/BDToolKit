@@ -21,17 +21,23 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+#import "NSMutableDictionary+BD.h"
 
-#import <UIKit/UIKit.h>
-
-@interface UIViewController(BD)
-
-/// perform segue with class
-- (void)performSegueWithClass:(Class)cls sender:(id)sender;
-
-/// present navigation controller in storyboard
-- (void)presentNavigationViewController:(NSString *)navControllerName inStoryboard:(NSString *)storyboardName;
-
-/// push view controller
-- (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName;
+@implementation NSMutableDictionary(BD)
+- (void)setInteger:(NSInteger)integer forKey:(NSString *)key
+{
+    [self setObject:@(integer) forKey:key];
+}
+- (void)setInt:(int)Int forKey:(NSString *)key
+{
+    [self setObject:@(Int) forKey:key];
+}
+- (void)setDouble:(NSInteger)Double forKey:(NSString *)key
+{
+    [self setObject:@(Double) forKey:key];
+}
+- (void)setFloat:(NSInteger)Float forKey:(NSString *)key
+{
+    [self setObject:@(Float) forKey:key];
+}
 @end

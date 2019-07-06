@@ -72,5 +72,6 @@ SOFTWARE.
 #import "NSURLProtocol+WKWebVIew.h"
 #import "NSArray+Identifier.h"
 #import "NSObject+Identifier.h"
+#import "NSMutableDictionary+BD.h"
 
 #endif /* BDToolKit_h */
