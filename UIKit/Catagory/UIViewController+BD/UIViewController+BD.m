@@ -59,10 +59,10 @@
 - (void)rateAppWithId:(NSString *)appId
 {
     //评价
-    UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:@"给个五星好评吧亲!" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"给个五星好评吧亲!", nil) message:nil preferredStyle:UIAlertControllerStyleAlert];
     //跳转APPStore 中应用的撰写评价页面
-    UIAlertAction *review = [UIAlertAction actionWithTitle:@"我要吐槽" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSURL *appReviewUrl = [NSURL URLWithString:[NSString stringWithFormat: @"itms-apps://itunes.apple.com/app/id%@?action=write-review",@"APPID"]];//换成你应用的 APPID
+    UIAlertAction *review = [UIAlertAction actionWithTitle:NSLocalizedString(@"我要吐槽", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSURL *appReviewUrl = [NSURL URLWithString:[NSString stringWithFormat: @"itms-apps://itunes.apple.com/app/id%@?action=write-review",appId?appId:@"APP"]];//换成你应用的 APPID
         CGFloat version = [[[UIDevice currentDevice]systemVersion]floatValue];
         if (version >= 10.0) {
             /// 大于等于10.0系统使用此openURL方法
@@ -72,7 +72,7 @@
         }
     }];
     //不做任何操作
-    UIAlertAction *noReview = [UIAlertAction actionWithTitle:@"用用再说" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *noReview = [UIAlertAction actionWithTitle:NSLocalizedString(@"用用再说", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertVC removeFromParentViewController];
     }];
     
@@ -80,7 +80,7 @@
     [alertVC addAction:noReview];
     //判断系统,是否添加五星好评的入口
     if([SKStoreReviewController respondsToSelector:@selector(requestReview)]){
-        UIAlertAction *fiveStar = [UIAlertAction actionWithTitle:@"五星好评" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *fiveStar = [UIAlertAction actionWithTitle:NSLocalizedString(@"五星好评", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [[UIApplication sharedApplication].keyWindow endEditing:YES];
             [SKStoreReviewController requestReview];
         }];
