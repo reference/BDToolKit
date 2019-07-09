@@ -57,6 +57,8 @@ SOFTWARE.
 #import "UICollectionViewController+BD.h"
 #import "UIButton+BD.h"
 #import "UIView+Tap.h"
+#import "NSObject+Archive.h"
+#import "NSObject+NSCoding.h"
 
 
 //controllers

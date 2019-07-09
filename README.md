@@ -75,6 +75,8 @@ pod 'BDToolKit'
 * NSURLProtocol+WKWebVIew
 * NSArray+Identifier
 * NSObject+Identifier
+* NSObject+NSCoding
+* NSObject+Archive
 
 ## License
 
