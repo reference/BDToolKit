@@ -1,5 +1,6 @@
 # BDToolKit
-<img src="https://img.shields.io/badge/BDToolKit-Objective--C-orange.svg"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg">
+<img src="https://img.shields.io/badge/BDToolKit-Objective--C-orange.svg">  
+<img src="https://img.shields.io/badge/License-MIT-lightgrey.svg">
 
 Powerfull development kit for iOS.
 
