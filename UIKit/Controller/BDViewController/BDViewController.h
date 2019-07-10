@@ -40,6 +40,7 @@ typedef void (^PrepareForSegueBlock)(UIViewController *viewController, id sender
 @property (nonatomic,strong) IBOutletCollection(UITableView) NSArray <UITableView *> *tableViews;
 @property (nonatomic,strong) IBOutletCollection(UICollectionView) NSArray <UICollectionView *> *collectionViews;
 @property (nonatomic,strong) IBOutletCollection(UICollectionReusableView) NSArray <UICollectionReusableView *> *collectionReuseableViews;
+@property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
 
 /// perform segue with class
 - (void)performSegueWithClass:(Class)cls sender:(id)sender;

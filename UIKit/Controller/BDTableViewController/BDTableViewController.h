@@ -36,6 +36,8 @@ typedef void (^PrepareForSegueBlock)(UIViewController *viewController, id sender
 @property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
+@property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
+
 
 /// perform segue with class
 - (void)performSegueWithClass:(Class)cls sender:(id)sender;

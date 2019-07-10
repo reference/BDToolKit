@@ -64,6 +64,11 @@
     return (UICollectionReusableView *)[self viewForTag:tag];
 }
 
+- (UIStackView *)stackViewForTag:(NSInteger )tag
+{
+    return (UIStackView *)[self viewForTag:tag];
+}
+
 - (UIView *)viewForTag:(NSInteger )tag
 {
     for (UIView *v in self) {

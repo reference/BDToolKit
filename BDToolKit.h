@@ -59,8 +59,6 @@ SOFTWARE.
 #import "UIView+Tap.h"
 #import "NSObject+Archive.h"
 #import "NSObject+NSCoding.h"
-#import "UIViewController+OutletCollection.h"
-
 
 //controllers
 #import "BDViewController.h"

@@ -32,5 +32,6 @@
 - (UITableView *)tableViewForTag:(NSInteger )tag;
 - (UICollectionView *)collectionViewForTag:(NSInteger )tag;
 - (UICollectionReusableView *)collectionReusableViewForTag:(NSInteger )tag;
+- (UIStackView *)stackViewForTag:(NSInteger )tag;
 - (UIView *)viewForTag:(NSInteger )tag;
 @end
