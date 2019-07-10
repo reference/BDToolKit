@@ -24,12 +24,12 @@
 #import <Foundation/Foundation.h>
 
 @interface UIViewController(OutletCollection)
-@property (nonatomic,strong) IBInspectable IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
-@property (nonatomic,strong) IBInspectable IBOutletCollection(UIImageView) NSArray <UIImageView *> *imageViews;
-@property (nonatomic,strong) IBInspectable IBOutletCollection(UIView) NSArray <UIView *> *views;
-@property (nonatomic,strong) IBInspectable IBOutletCollection(UIButton) NSArray <UIButton *> *buttons;
-@property (nonatomic,strong) IBInspectable IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
-@property (nonatomic,strong) IBInspectable IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
-@property (nonatomic,strong) IBInspectable IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
-@property (nonatomic,strong) IBInspectable IBOutletCollection(UICollectionReusableView) NSArray <UICollectionReusableView *> *collectionReusableViews;
+@property (nonatomic,strong) IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
+@property (nonatomic,strong) IBOutletCollection(UIImageView) NSArray <UIImageView *> *imageViews;
+@property (nonatomic,strong) IBOutletCollection(UIView) NSArray <UIView *> *views;
+@property (nonatomic,strong) IBOutletCollection(UIButton) NSArray <UIButton *> *buttons;
+@property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
+@property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
+@property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
+@property (nonatomic,strong) IBOutletCollection(UICollectionReusableView) NSArray <UICollectionReusableView *> *collectionReusableViews;
 @end
