@@ -1,6 +1,9 @@
-# BDToolKit
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Instagram/IGListKit/master/Resources/logo-animation.gif" width=400 />
+
 <img src="https://img.shields.io/badge/BDToolKit-Objective--C-orange.svg">  
 <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg">
+</p>
 
 Powerfull development kit for iOS.
 
