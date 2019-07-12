@@ -47,7 +47,6 @@ SOFTWARE.
 #import "UITextView+BD.h"
 #import "UIView+BDCDS.h"
 #import "UIView+BDAnimation.h"
-#import "UIView+Tag.h"
 #import "UILabel+NSNumberFormat.h"
 #import "NSNumber+NumerFormat.h"
 #import "NSDate+BD.h"
