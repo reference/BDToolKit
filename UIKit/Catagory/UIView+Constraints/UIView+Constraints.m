@@ -22,7 +22,91 @@
  SOFTWARE.
  */
 #import "UIView+Constraints.h"
+#import <objc/runtime.h>
+
+static const char *kTop = "__kTop__";
+static const char *kBottom = "__kBottom__";
+static const char *kLeft = "__kLeft__";
+static const char *kRight = "__kRight__";
+static const char *kWidth = "__kWidth__";
+static const char *kHeight = "__kHeight__";
+static const char *kOther = "__kOther__";
 
 @implementation UIView(Constraints)
+//top
+- (NSLayoutConstraint *)topLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kTop);
+}
 
+- (void)setTopLayoutConstraint:(NSLayoutConstraint *)topLayoutConstraint
+{
+    objc_setAssociatedObject(self,kTop, topLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//bottom
+- (NSLayoutConstraint *)bottomLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kBottom);
+}
+
+- (void)setBottomLayoutConstraint:(NSLayoutConstraint *)bottomLayoutConstraint
+{
+    objc_setAssociatedObject(self,kBottom, bottomLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//left
+- (NSLayoutConstraint *)leftLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kLeft);
+}
+
+- (void)setLeftLayoutConstraint:(NSLayoutConstraint *)leftLayoutConstraint
+{
+    objc_setAssociatedObject(self,kLeft, leftLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//right
+- (NSLayoutConstraint *)rightLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kRight);
+}
+
+- (void)setRightLayoutConstraint:(NSLayoutConstraint *)rightLayoutConstraint
+{
+    objc_setAssociatedObject(self,kRight, rightLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//width
+- (NSLayoutConstraint *)widthLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kWidth);
+}
+
+- (void)setWidthLayoutConstraint:(NSLayoutConstraint *)widthLayoutConstraint
+{
+    objc_setAssociatedObject(self,kWidth, widthLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//height
+- (NSLayoutConstraint *)heightLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kHeight);
+}
+
+- (void)setHeightLayoutConstraint:(NSLayoutConstraint *)heightLayoutConstraint
+{
+    objc_setAssociatedObject(self,kHeight, heightLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//other
+- (NSLayoutConstraint *)otherLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kOther);
+}
+
+- (void)setOtherLayoutConstraint:(NSLayoutConstraint *)otherLayoutConstraint
+{
+    objc_setAssociatedObject(self,kOther, otherLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 @end
