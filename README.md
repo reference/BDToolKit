@@ -36,7 +36,6 @@ pod 'BDToolKit'
 * UIView+BD
 * UIView+BDCDS
 * UIView+BDAnimation
-* UIView+Tag
 * UIImageView+SDAnimated
 * UILabel+NSNumberFormat
 * NSNumber+NumerFormat
@@ -47,6 +46,7 @@ pod 'BDToolKit'
 * UICollectionViewController+BD
 * UIButton+BD
 * UIView+Tap
+* UIView+Constraints
 
 ## BDUIKit
 

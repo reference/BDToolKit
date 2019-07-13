@@ -21,16 +21,15 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-//IB_DESIGNABLE
-@interface BDView : UIView
-@property (nonatomic,strong) IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
-@property (nonatomic,strong) IBOutletCollection(UIImageView) NSArray <UIImageView *> *imageViews;
-@property (nonatomic,strong) IBOutletCollection(UIView) NSArray <UIView *> *views;
-@property (nonatomic,strong) IBOutletCollection(UIButton) NSArray <UIButton *> *buttons;
-@property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
-@property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
-@property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
 
-@property (nonatomic,assign) IBInspectable CGFloat radius;
+@interface UIView(Constraints)
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *topLayoutConstraint;
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *bottomLayoutConstraint;
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *leftLayoutConstraint;
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *rightLayoutConstraint;
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *heightLayoutConstraint;
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *widthLayoutConstraint;
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *otherLayoutConstraint;
 @end
