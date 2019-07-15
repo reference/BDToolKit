@@ -27,7 +27,7 @@
 
 - (void)sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event
 {
-    if ([target isKindOfClass:UIViewController.class] || [target isKindOfClass:UIViewTableViewController.class] || [target isKindOfClass:UICollectionViewController.class]) {
+    if ([target isKindOfClass:UIViewController.class] || [target isKindOfClass:UITableViewController.class] || [target isKindOfClass:UICollectionViewController.class]) {
         UIViewController *vc = target;
         [vc.view endEditing:YES];
     }
