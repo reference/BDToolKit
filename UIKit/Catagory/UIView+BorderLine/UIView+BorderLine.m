@@ -70,7 +70,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
         layer.identifier = kLineRight;
         [self.layer addSublayer:layer];
     }
-    CGRect rect = CGRectMake(0, 0, rightLineWidth, self.bounds.size.height);
+    CGRect rect = CGRectMake(self.bounds.size.width - rightLineWidth, 0, rightLineWidth, self.bounds.size.height);
     layer.frame = rect;
 }
 
@@ -89,14 +89,14 @@ static NSString * const kLineBottom = @"kLineBottom__";
         layer.identifier = kLineTop;
         [self.layer addSublayer:layer];
     }
-    CGRect rect = CGRectMake(0, 0, topLineHeight, self.bounds.size.height);
+    CGRect rect = CGRectMake(0, 0, self.bounds.size.width, topLineHeight);
     layer.frame = rect;
 }
 
 - (CGFloat)topLineHeight
 {
     CALayer *layer = [self layerForIdentifier:kLineTop];
-    return layer ? layer.frame.size.width : 0;
+    return layer ? layer.frame.size.height : 0;
 }
 
 //bottom
@@ -108,14 +108,14 @@ static NSString * const kLineBottom = @"kLineBottom__";
         layer.identifier = kLineBottom;
         [self.layer addSublayer:layer];
     }
-    CGRect rect = CGRectMake(0, 0, bottomLineHeight, self.bounds.size.height);
+    CGRect rect = CGRectMake(0, self.bounds.size.height - bottomLineHeight, self.bounds.size.width, bottomLineHeight);
     layer.frame = rect;
 }
 
 - (CGFloat)bottomLineHeight
 {
     CALayer *layer = [self layerForIdentifier:kLineBottom];
-    return layer ? layer.frame.size.width : 0;
+    return layer ? layer.frame.size.height : 0;
 }
 
 #pragma mark - 边框颜色
