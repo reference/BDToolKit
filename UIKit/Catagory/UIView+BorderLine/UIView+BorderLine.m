@@ -48,6 +48,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
     CALayer *layer = [self layerForIdentifier:kLineLeft];
     if (!layer) {
         layer = [[CALayer alloc] init];
+        layer.identifier = kLineLeft;
         [self.layer addSublayer:layer];
     }
     CGRect rect = CGRectMake(0, 0, leftLineWidth, self.bounds.size.height);
@@ -66,6 +67,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
     CALayer *layer = [self layerForIdentifier:kLineRight];
     if (!layer) {
         layer = [[CALayer alloc] init];
+        layer.identifier = kLineRight;
         [self.layer addSublayer:layer];
     }
     CGRect rect = CGRectMake(0, 0, rightLineWidth, self.bounds.size.height);
@@ -84,6 +86,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
     CALayer *layer = [self layerForIdentifier:kLineTop];
     if (!layer) {
         layer = [[CALayer alloc] init];
+        layer.identifier = kLineTop;
         [self.layer addSublayer:layer];
     }
     CGRect rect = CGRectMake(0, 0, topLineHeight, self.bounds.size.height);
@@ -102,6 +105,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
     CALayer *layer = [self layerForIdentifier:kLineBottom];
     if (!layer) {
         layer = [[CALayer alloc] init];
+        layer.identifier = kLineBottom;
         [self.layer addSublayer:layer];
     }
     CGRect rect = CGRectMake(0, 0, bottomLineHeight, self.bounds.size.height);
@@ -122,6 +126,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
     CALayer *layer = [self layerForIdentifier:kLineLeft];
     if (!layer) {
         layer = [[CALayer alloc] init];
+        layer.identifier = kLineLeft;
         [self.layer addSublayer:layer];
     }
     layer.backgroundColor = leftLineColor.CGColor;
@@ -139,6 +144,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
     CALayer *layer = [self layerForIdentifier:kLineRight];
     if (!layer) {
         layer = [[CALayer alloc] init];
+        layer.identifier = kLineRight;
         [self.layer addSublayer:layer];
     }
     layer.backgroundColor = rightLineColor.CGColor;
@@ -156,6 +162,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
     CALayer *layer = [self layerForIdentifier:kLineTop];
     if (!layer) {
         layer = [[CALayer alloc] init];
+        layer.identifier = kLineTop;
         [self.layer addSublayer:layer];
     }
     layer.backgroundColor = topLineColor.CGColor;
@@ -173,6 +180,7 @@ static NSString * const kLineBottom = @"kLineBottom__";
     CALayer *layer = [self layerForIdentifier:kLineBottom];
     if (!layer) {
         layer = [[CALayer alloc] init];
+        layer.identifier = kLineBottom;
         [self.layer addSublayer:layer];
     }
     layer.backgroundColor = bottomLineColor.CGColor;
