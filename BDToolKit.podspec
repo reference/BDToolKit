@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.0.0"
+  s.version      = "2.0.1"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -204,6 +204,12 @@ Pod::Spec.new do |s|
     s.subspec "UIButton+Action" do |ss|
         ss.source_files  = "UIKit/Catagory/UIButton+Action/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UIButton+Action/*.h"
+    end
+
+    s.subspec "UIView+BorderLine" do |ss|
+        ss.dependency 'BDToolKit/NSObject+Identifier'
+        ss.source_files  = "UIKit/Catagory/UIView+BorderLine/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UIView+BorderLine/*.h"
     end
 
     s.subspec "NSObject+NSCoding" do |ss|

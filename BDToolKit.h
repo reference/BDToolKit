@@ -60,6 +60,7 @@ SOFTWARE.
 #import "NSObject+NSCoding.h"
 #import "UIView+Constraints.h"
 #import "UIButton+Action.h"
+#import "UIView+BorderLine.h"
 
 //controllers
 #import "BDViewController.h"
