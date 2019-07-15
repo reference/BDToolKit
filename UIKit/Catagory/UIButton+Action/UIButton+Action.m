@@ -27,7 +27,8 @@
 
 - (void)sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event
 {
-    [[UIApplication sharedApplication].keyWindow.rootViewController.view endEditing:YES];
+    UIViewController *vc = target;
+    [vc.view endEditing:YES];
     [super sendAction:action to:target forEvent:event];
 }
 @end
