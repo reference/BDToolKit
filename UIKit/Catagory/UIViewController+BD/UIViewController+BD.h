@@ -39,4 +39,7 @@
 /// innner rate app
 - (void)rateAppWithId:(NSString *)appId;
 
+/// share app
+- (void)shareAppWithId:(NSString *)appId;
+
 @end

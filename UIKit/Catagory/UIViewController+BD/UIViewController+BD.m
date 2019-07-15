@@ -90,4 +90,20 @@
         [self presentViewController:alertVC animated:YES completion:nil];
     });
 }
+
+- (void)shareAppWithId:(NSString *)appId
+{
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *shareTitle = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    
+    UIImage *shareImage = [UIImage imageNamed:@"AppIcon60x60"];
+    NSURL *shareUrl = [NSURL URLWithString:[NSString stringWithFormat:@"https://apps.apple.com/cn/app/id%@",appId]];
+    NSArray *activityItems = @[shareTitle,
+                               shareImage,
+                               shareUrl]; // 必须要提供url 才会显示分享标签否则只显示图片
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc]
+                                            initWithActivityItems:activityItems
+                                            applicationActivities:nil];
+    [self presentViewController:activityVC animated:YES completion:nil];
+}
 @end
