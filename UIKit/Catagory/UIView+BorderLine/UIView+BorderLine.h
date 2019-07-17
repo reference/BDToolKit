@@ -25,14 +25,14 @@
 #import "NSObject+Identifier.h"
 
 @interface UIView(BorderLine)
-@property (nonatomic, assign) IBInspectable CGFloat leftLineWidth;
-@property (nonatomic, assign) IBInspectable CGFloat rightLineWidth;
-@property (nonatomic, assign) IBInspectable CGFloat topLineHeight;
-@property (nonatomic, assign) IBInspectable CGFloat bottomLineHeight;
+@property (nonatomic, assign) /*IBInspectable*/ CGFloat leftLineWidth;
+@property (nonatomic, assign) /*IBInspectable*/ CGFloat rightLineWidth;
+@property (nonatomic, assign) /*IBInspectable*/ CGFloat topLineHeight;
+@property (nonatomic, assign) /*IBInspectable*/ CGFloat bottomLineHeight;
 
-@property (nonatomic, strong) IBInspectable UIColor *leftLineColor;
-@property (nonatomic, strong) IBInspectable UIColor *rightLineColor;
-@property (nonatomic, strong) IBInspectable UIColor *topLineColor;
-@property (nonatomic, strong) IBInspectable UIColor *bottomLineColor;
+@property (nonatomic, strong) /*IBInspectable*/ UIColor *leftLineColor;
+@property (nonatomic, strong) /*IBInspectable*/ UIColor *rightLineColor;
+@property (nonatomic, strong) /*IBInspectable*/ UIColor *topLineColor;
+@property (nonatomic, strong) /*IBInspectable*/ UIColor *bottomLineColor;
 
 @end
