@@ -31,5 +31,7 @@
 @property (nonatomic,strong) IBOutlet NSLayoutConstraint *rightLayoutConstraint;
 @property (nonatomic,strong) IBOutlet NSLayoutConstraint *heightLayoutConstraint;
 @property (nonatomic,strong) IBOutlet NSLayoutConstraint *widthLayoutConstraint;
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *centerXLayoutConstraint;
+@property (nonatomic,strong) IBOutlet NSLayoutConstraint *centerYLayoutConstraint;
 @property (nonatomic,strong) IBOutlet NSLayoutConstraint *otherLayoutConstraint;
 @end

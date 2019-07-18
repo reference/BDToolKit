@@ -31,6 +31,8 @@ static const char *kRight = "__kRight__";
 static const char *kWidth = "__kWidth__";
 static const char *kHeight = "__kHeight__";
 static const char *kOther = "__kOther__";
+static const char *kCenterX = "__kCenterX__";
+static const char *kCenterY = "__kCenterY__";
 
 @implementation UIView(Constraints)
 //top
@@ -97,6 +99,28 @@ static const char *kOther = "__kOther__";
 - (void)setHeightLayoutConstraint:(NSLayoutConstraint *)heightLayoutConstraint
 {
     objc_setAssociatedObject(self,kHeight, heightLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//center x
+- (NSLayoutConstraint *)centerXLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kCenterX);
+}
+
+- (void)setCenterXLayoutConstraint:(NSLayoutConstraint *)centerXLayoutConstraint
+{
+    objc_setAssociatedObject(self,kCenterX, centerXLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//center y
+- (NSLayoutConstraint *)centerYLayoutConstraint
+{
+    return objc_getAssociatedObject(self, kCenterY);
+}
+
+- (void)setCenterYLayoutConstraint:(NSLayoutConstraint *)centerYLayoutConstraint
+{
+    objc_setAssociatedObject(self,kCenterY, centerYLayoutConstraint,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 //other
