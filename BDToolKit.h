@@ -25,6 +25,9 @@ SOFTWARE.
 #ifndef BDToolKit_h
 #define BDToolKit_h
 
+//define
+#import "BDDefine.h"
+
 /// UIKIT
 
 //views
