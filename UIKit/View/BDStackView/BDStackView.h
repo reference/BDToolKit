@@ -22,7 +22,6 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
-#import "BDView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -34,8 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) IBOutletCollection(UITextField)    NSArray <UITextField *>     *textFields;
 @property (nonatomic,strong) IBOutletCollection(UITextView)     NSArray <UITextView *>      *textViews;
 @property (nonatomic,strong) IBOutletCollection(UIStackView)    NSArray <UIStackView *>     *stackViews;
-//bd views
-@property (nonatomic,strong) IBOutletCollection(BDView)         NSArray <BDView *>     *bd_views;
 @end
 
 NS_ASSUME_NONNULL_END
