@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.1.7"
+  s.version      = "2.1.8"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -27,6 +27,11 @@ Pod::Spec.new do |s|
     s.subspec "BDDefine" do |ss|
         ss.source_files  = "BDDefine.h"
         ss.public_header_files = "BDDefine.h"
+    end
+
+    s.subspec "NSObject+Identifier" do |ss|
+        ss.source_files  = "UIKit/Catagory/NSObject+Identifier/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSObject+Identifier/*.h"
     end
 
     s.subspec "BDView" do |ss|
@@ -87,11 +92,6 @@ Pod::Spec.new do |s|
     s.subspec "NSNumber+NumerFormat" do |ss|
         ss.source_files  = "UIKit/Catagory/NSNumber+NumerFormat/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/NSNumber+NumerFormat/*.h"
-    end
-
-    s.subspec "NSObject+Identifier" do |ss|
-        ss.source_files  = "UIKit/Catagory/NSObject+Identifier/*.{h,m}"
-        ss.public_header_files = "UIKit/Catagory/NSObject+Identifier/*.h"
     end
 
     s.subspec "BDViewController" do |ss|
