@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.1.6"
+  s.version      = "2.1.7"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -94,11 +94,6 @@ Pod::Spec.new do |s|
         ss.public_header_files = "UIKit/Catagory/NSObject+Identifier/*.h"
     end
 
-    s.subspec "NSArray+Identifier" do |ss|
-        ss.source_files  = "UIKit/Catagory/NSArray+Identifier/*.{h,m}"
-        ss.public_header_files = "UIKit/Catagory/NSArray+Identifier/*.h"
-    end
-
     s.subspec "BDViewController" do |ss|
         ss.dependency 'BDToolKit/BDView'
         ss.dependency 'BDToolKit/BDStackView'
@@ -137,7 +132,7 @@ Pod::Spec.new do |s|
     s.subspec "NSArray+BDUIKIT" do |ss|
         ss.dependency 'BDToolKit/BDView'
         ss.dependency 'BDToolKit/BDStackView'
-        ss.dependency 'NSArray+Identifier'
+        ss.dependency 'NSObject+Identifier'
         ss.source_files  = "UIKit/Catagory/NSArray+BDUIKIT/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/NSArray+BDUIKIT/*.h"
     end

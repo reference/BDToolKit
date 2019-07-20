@@ -79,7 +79,6 @@ SOFTWARE.
 
 //catagory
 #import "NSURLProtocol+WKWebVIew.h"
-#import "NSArray+Identifier.h"
 #import "NSObject+Identifier.h"
 #import "NSMutableDictionary+BD.h"
 #import "NSString+PercentEncoding.h"

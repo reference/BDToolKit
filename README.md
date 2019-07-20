@@ -84,7 +84,6 @@ pod 'BDToolKit'
 ### Catagory
 
 * NSURLProtocol+WKWebVIew
-* NSArray+Identifier
 * NSObject+Identifier
 * NSObject+NSCoding
 * NSObject+Archive
