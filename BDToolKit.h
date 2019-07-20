@@ -34,6 +34,7 @@ SOFTWARE.
 #import "BDView.h"
 #import "BDTableViewCell.h"
 #import "BDCollectionViewCell.h"
+#import "BDStackView.h"
 #import "BDButton.h"
 #import "BDImageView.h"
 #import "BDSegmentView.h"

@@ -71,6 +71,7 @@ pod 'BDToolKit'
 * BDSegmentView
 * BDTableViewCell
 * BDView
+* BDStackView
 * BDFreeStyleButton
 
 ### Utils
