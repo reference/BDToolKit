@@ -26,13 +26,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BDStackView : UIStackView
-@property (nonatomic,strong) IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
-@property (nonatomic,strong) IBOutletCollection(UIImageView) NSArray <UIImageView *> *imageViews;
-@property (nonatomic,strong) IBOutletCollection(UIView) NSArray <UIView *> *views;
-@property (nonatomic,strong) IBOutletCollection(UIButton) NSArray <UIButton *> *buttons;
-@property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
-@property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
-@property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
+@property (nonatomic,strong) IBOutletCollection(UILabel)        NSArray <UILabel *>         *bd_labels;
+@property (nonatomic,strong) IBOutletCollection(UIImageView)    NSArray <UIImageView *>     *bd_imageViews;
+@property (nonatomic,strong) IBOutletCollection(UIView)         NSArray <UIView *>          *bd_views;
+@property (nonatomic,strong) IBOutletCollection(UIButton)       NSArray <UIButton *>        *bd_buttons;
+@property (nonatomic,strong) IBOutletCollection(UITextField)    NSArray <UITextField *>     *bd_textFields;
+@property (nonatomic,strong) IBOutletCollection(UITextView)     NSArray <UITextView *>      *bd_textViews;
+@property (nonatomic,strong) IBOutletCollection(UIStackView)    NSArray <UIStackView *>     *bd_stackViews;
 @end
 
 NS_ASSUME_NONNULL_END
