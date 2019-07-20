@@ -22,6 +22,8 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
+#import "BDStackView.h"
+
 //IB_DESIGNABLE
 @interface BDView : UIView
 @property (nonatomic,strong) IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
@@ -30,7 +32,11 @@
 @property (nonatomic,strong) IBOutletCollection(UIButton) NSArray <UIButton *> *buttons;
 @property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
-@property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *bd_stackViews;
+@property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
+
+//bd views
+@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bd_views;
+@property (nonatomic,strong) IBOutletCollection(BDStackView) NSArray <BDStackView *> *bd_stackViews;
 
 @property (nonatomic,assign) IBInspectable CGFloat radius;
 @end

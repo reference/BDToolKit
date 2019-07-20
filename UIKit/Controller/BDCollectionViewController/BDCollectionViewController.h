@@ -22,6 +22,8 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
+#import "BDView.h"
+#import "BDStackView.h"
 
 //prepare block
 typedef void (^PrepareForSegueBlock)(UIViewController *viewController, id sender);
@@ -38,6 +40,10 @@ typedef void (^PrepareForSegueBlock)(UIViewController *viewController, id sender
 @property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
 @property (nonatomic,strong) IBOutletCollection(UICollectionReusableView) NSArray <UICollectionReusableView *> *collectionReusableViews;
+//bd
+@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bd_views;
+@property (nonatomic,strong) IBOutletCollection(BDStackView) NSArray <BDStackView *> *bd_stackViews;
+
 
 /// perform segue with class
 - (void)performSegueWithClass:(Class)cls sender:(id)sender;
