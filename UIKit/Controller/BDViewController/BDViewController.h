@@ -45,7 +45,7 @@ typedef void (^PrepareForSegueBlock)(UIViewController *viewController, id sender
 @property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
 
 //bd views
-@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bd_stackViews;
+@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bd_views;
 @property (nonatomic,strong) IBOutletCollection(BDStackView) NSArray <BDStackView *> *bd_stackViews;
 
 

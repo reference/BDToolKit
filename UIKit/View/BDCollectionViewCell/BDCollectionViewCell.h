@@ -34,7 +34,7 @@
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
 //bd views
-@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDStackView *> *bd_stackViews;
+@property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDStackView *> *bd_views;
 @property (nonatomic,strong) IBOutletCollection(BDStackView) NSArray <BDStackView *> *bd_stackViews;
 
 @property (nonatomic,copy) void (^onClickedButtons)(NSInteger tag);
