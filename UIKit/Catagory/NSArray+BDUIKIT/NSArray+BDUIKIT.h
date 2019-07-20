@@ -24,6 +24,7 @@
 #import <UIKit/UIKit.h>
 #import "BDView.h"
 #import "BDStackView.h"
+#import "NSObject+Identifier.h"
 
 @interface NSArray(BDUIKIT)
 

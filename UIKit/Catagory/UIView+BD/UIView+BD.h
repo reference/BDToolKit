@@ -45,28 +45,12 @@
                 withRadii:(CGSize)radii
                  viewRect:(CGRect)rect;
 
-/**
- *  设置圆角
- *
- *  @param cornerRadius 圆角大小
- */
+/// cornerRadius
 @property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
-/**
- *  是否裁剪子视图
- *
- *  @param cornerRadius YES 裁剪 -- NO 不裁剪
- */
+/// masksToBounds
 @property (nonatomic, assign) IBInspectable BOOL masksToBounds;
-/**
- *  设置边框宽度
- *
- *  @param borderWidth 边框宽度
- */
+/// borderWidth
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;
-/**
- *  设置边框颜色
- *
- *  @param borderColor 边框颜色
- */
+/// borderColor
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
 @end
