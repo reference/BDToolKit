@@ -22,6 +22,7 @@
  SOFTWARE.
  */
 #import "NSArray+BDUIKIT.h"
+#import "NSObject+Identifier.h"
 
 @implementation NSArray(BDUIKIT)
 #pragma mark - tag
