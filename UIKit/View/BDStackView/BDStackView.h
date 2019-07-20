@@ -36,7 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) IBOutletCollection(UIStackView)    NSArray <UIStackView *>     *stackViews;
 //bd views
 @property (nonatomic,strong) IBOutletCollection(BDView)         NSArray <BDView *>     *bd_views;
-@property (nonatomic,strong) IBOutletCollection(BDStackView)    NSArray <BDStackView *>     *bd_stackViews;
 @end
 
 NS_ASSUME_NONNULL_END
