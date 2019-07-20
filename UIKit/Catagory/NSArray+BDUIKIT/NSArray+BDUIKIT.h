@@ -22,8 +22,12 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
+#import "BDView.h"
+#import "BDStackView.h"
 
 @interface NSArray(BDUIKIT)
+
+//tag
 - (UILabel *)labelForTag:(NSInteger )tag;
 - (UIButton *)buttonForTag:(NSInteger )tag;
 - (UITextField *)textFieldForTag:(NSInteger )tag;
@@ -34,4 +38,22 @@
 - (UICollectionReusableView *)collectionReusableViewForTag:(NSInteger )tag;
 - (UIStackView *)stackViewForTag:(NSInteger )tag;
 - (UIView *)viewForTag:(NSInteger )tag;
+
+- (BDStackView *)bd_stackViewForTag:(NSInteger )tag;
+- (BDView *)bd_viewForTag:(NSInteger )tag;
+
+//identifier
+- (UILabel *)labelForIdentifier:(NSString *)identifier;
+- (UIButton *)buttonForIdentifier:(NSString *)identifier;
+- (UITextField *)textFieldForIdentifier:(NSString *)identifier;
+- (UIImageView *)imageViewForIdentifier:(NSString *)identifier;
+- (UISwitch *)switchForIdentifier:(NSString *)identifier;
+- (UITableView *)tableViewForIdentifier:(NSString *)identifier;
+- (UICollectionView *)collectionViewForIdentifier:(NSString *)identifier;
+- (UICollectionReusableView *)collectionReusableViewForIdentifier:(NSString *)identifier;
+- (UIStackView *)stackViewForIdentifier:(NSString *)identifier;
+- (UIView *)viewForIdentifier:(NSString *)identifier;
+
+- (BDStackView *)bd_stackViewForIdentifier:(NSString *)identifier;
+- (BDView *)bd_viewForIdentifier:(NSString *)identifier;
 @end

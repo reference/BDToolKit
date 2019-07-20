@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.1.1"
+  s.version      = "2.1.2"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -90,41 +90,55 @@ Pod::Spec.new do |s|
     end
 
     s.subspec "BDViewController" do |ss|
+        ss.dependency 'BDToolKit/BDView'
+        ss.dependency 'BDToolKit/BDStackView'
         ss.source_files  = "UIKit/Controller/BDViewController/*.{h,m}"
         ss.public_header_files = "UIKit/Controller/BDViewController/*.h"
     end
 
     s.subspec "BDTableViewController" do |ss|
+        ss.dependency 'BDToolKit/BDView'
+        ss.dependency 'BDToolKit/BDStackView'
         ss.source_files  = "UIKit/Controller/BDTableViewController/*.{h,m}"
         ss.public_header_files = "UIKit/Controller/BDTableViewController/*.h"
     end
 
     s.subspec "BDCollectionViewController" do |ss|
+        ss.dependency 'BDToolKit/BDView'
+        ss.dependency 'BDToolKit/BDStackView'
         ss.source_files  = "UIKit/Controller/BDCollectionViewController/*.{h,m}"
         ss.public_header_files = "UIKit/Controller/BDCollectionViewController/*.h"
     end
 
     s.subspec "BDView" do |ss|
+        ss.dependency 'BDToolKit/BDStackView'
         ss.source_files  = "UIKit/View/BDView/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDView/*.h"
     end
 
     s.subspec "BDStackView" do |ss|
+        ss.dependency 'BDToolKit/BDView'
         ss.source_files  = "UIKit/View/BDStackView/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDStackView/*.h"
     end
 
     s.subspec "BDTableViewCell" do |ss|
+        ss.dependency 'BDToolKit/BDView'
+        ss.dependency 'BDToolKit/BDStackView'
         ss.source_files  = "UIKit/View/BDTableViewCell/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDTableViewCell/*.h"
     end
 
     s.subspec "BDCollectionViewCell" do |ss|
+        ss.dependency 'BDToolKit/BDView'
+        ss.dependency 'BDToolKit/BDStackView'
         ss.source_files  = "UIKit/View/BDCollectionViewCell/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDCollectionViewCell/*.h"
     end
 
     s.subspec "NSArray+BDUIKIT" do |ss|
+        ss.dependency 'BDToolKit/BDView'
+        ss.dependency 'BDToolKit/BDStackView'
         ss.source_files  = "UIKit/Catagory/NSArray+BDUIKIT/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/NSArray+BDUIKIT/*.h"
     end

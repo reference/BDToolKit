@@ -24,6 +24,7 @@
 #import "NSArray+BDUIKIT.h"
 
 @implementation NSArray(BDUIKIT)
+#pragma mark - tag
 - (UILabel *)labelForTag:(NSInteger )tag
 {
     return (UILabel *)[self viewForTag:tag];
@@ -69,10 +70,87 @@
     return (UIStackView *)[self viewForTag:tag];
 }
 
+- (BDStackView *)bd_stackViewForTag:(NSInteger )tag
+{
+    return (BDStackView *)[self viewForTag:tag];
+}
+
+- (BDView *)bd_viewForTag:(NSInteger )tag
+{
+    return (BDView *)[self viewForTag:tag];
+}
+
 - (UIView *)viewForTag:(NSInteger )tag
 {
     for (UIView *v in self) {
         if (v.tag == tag) {
+            return v;
+        }
+    }
+    return nil;
+}
+
+#pragma mark - identifier
+
+- (UILabel *)labelForIdentifier:(NSString *)identifier
+{
+    return (UILabel *)[self viewForIdentifier:identifier];
+}
+
+- (UIButton *)buttonForIdentifier:(NSString *)identifier
+{
+    return (UIButton *)[self viewForIdentifier:identifier];
+}
+
+- (UIImageView *)imageViewForIdentifier:(NSString *)identifier
+{
+    return (UIImageView *)[self viewForIdentifier:identifier];
+}
+
+- (UITextField *)textFieldForIdentifier:(NSString *)identifier
+{
+    return (UITextField *)[self viewForIdentifier:identifier];
+}
+
+- (UISwitch *)switchForIdentifier:(NSString *)identifier
+{
+    return (UISwitch *)[self viewForIdentifier:identifier];
+}
+
+- (UITableView *)tableViewForIdentifier:(NSString *)identifier
+{
+    return (UITableView *)[self viewForIdentifier:identifier];
+}
+
+- (UICollectionView *)collectionViewForIdentifier:(NSString *)identifier
+{
+    return (UICollectionView *)[self viewForIdentifier:identifier];
+}
+
+- (UICollectionReusableView *)collectionReusableViewForIdentifier:(NSString *)identifier
+{
+    return (UICollectionReusableView *)[self viewForIdentifier:identifier];
+}
+
+- (UIStackView *)stackViewForIdentifier:(NSString *)identifier
+{
+    return (UIStackView *)[self viewForIdentifier:identifier];
+}
+
+- (BDStackView *)bd_stackViewForIdentifier:(NSString *)identifier
+{
+    return (BDStackView *)[self viewForIdentifier:identifier];
+}
+
+- (BDView *)bd_viewForIdentifier:(NSString *)identifier
+{
+    return (BDView *)[self viewForIdentifier:identifier];
+}
+
+- (UIView *)viewForIdentifier:(NSString *)identifier;
+{
+    for (UIView *v in self) {
+        if ([v.identifier isEqualToString:identifier]) {
             return v;
         }
     }
