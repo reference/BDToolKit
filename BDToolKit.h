@@ -41,6 +41,7 @@ SOFTWARE.
 #import "BDLabel.h"
 #import "BDSegmentView.h"
 #import "BDFreeStyleButton.h"
+#import "BDNavigationBar.h"
 
 //catagory
 #import "UIView+BD.h"
