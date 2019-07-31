@@ -25,7 +25,6 @@
 #import "BDViewController.h"
 
 @interface BDViewController ()
-@property (nonatomic,strong) Class tempClass;
 @end
 
 @implementation BDViewController
@@ -37,27 +36,24 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if (self.prepareForSegueBlock && [self.tempClass isKindOfClass:segue.destinationViewController.class]) {
+    if (self.prepareForSegueBlock) {
         self.prepareForSegueBlock(segue.destinationViewController, sender);
     }
 }
 
 - (void)performSegueWithClass:(Class)cls sender:(id)sender
 {
-    self.tempClass = cls;
     [self performSegueWithIdentifier:NSStringFromClass(cls) sender:sender];
 }
 
 - (void)performSegueWithClass:(Class)cls sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback
 {
-    self.tempClass = cls;
     self.prepareForSegueBlock = prepareCallback;
     [self performSegueWithClass:cls sender:sender];
 }
 
 - (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback
 {
-    self.tempClass = NSClassFromString(identifier);
     self.prepareForSegueBlock = prepareCallback;
     [self performSegueWithIdentifier:identifier sender:sender];
 }
