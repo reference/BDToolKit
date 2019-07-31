@@ -32,6 +32,7 @@
 @property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
+@property (nonatomic,strong) IBOutletCollection(UITableView) NSArray <UITableView *> *tableViews;
 @property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bd_views;
 @property (nonatomic,assign) IBInspectable CGFloat radius;
 @end
