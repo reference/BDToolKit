@@ -75,6 +75,7 @@ pod 'BDToolKit'
 * BDStackView
 * BDFreeStyleButton
 * BDNavigationBar
+* BDCountDownButton
 
 ### Utils
 * BDAudioPlayer
