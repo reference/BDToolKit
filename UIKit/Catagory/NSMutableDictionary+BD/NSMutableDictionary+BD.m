@@ -32,11 +32,11 @@
 {
     [self setObject:@(Int) forKey:key];
 }
-- (void)setDouble:(NSInteger)Double forKey:(NSString *)key
+- (void)setDouble:(double)Double forKey:(NSString *)key
 {
     [self setObject:@(Double) forKey:key];
 }
-- (void)setFloat:(NSInteger)Float forKey:(NSString *)key
+- (void)setFloat:(float)Float forKey:(NSString *)key
 {
     [self setObject:@(Float) forKey:key];
 }

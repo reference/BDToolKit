@@ -26,6 +26,6 @@
 @interface NSMutableDictionary(BD)
 - (void)setInteger:(NSInteger)integer forKey:(NSString *)key;
 - (void)setInt:(int)Int forKey:(NSString *)key;
-- (void)setDouble:(NSInteger)Double forKey:(NSString *)key;
-- (void)setFloat:(NSInteger)Float forKey:(NSString *)key;
+- (void)setDouble:(double)Double forKey:(NSString *)key;
+- (void)setFloat:(float)Float forKey:(NSString *)key;
 @end
