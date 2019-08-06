@@ -37,7 +37,7 @@
     NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
     [fmt setPositiveFormat:format];
     if (allow) {
-        fmt.minimumFractionDigits = [self componentsSeparatedByString:@"."].lastObject.length;
+        fmt.minimumFractionDigits = [format componentsSeparatedByString:@"."].lastObject.length;
     }
     return [fmt stringFromNumber:self];
 }
