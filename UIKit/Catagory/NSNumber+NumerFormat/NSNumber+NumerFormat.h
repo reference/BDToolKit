@@ -33,4 +33,21 @@
  */
 - (NSString *)stringWithFormat:(NSString *)format;
 
+/**
+ Format number
+
+ @param format format
+ @param allow allowZerosAfterDecimalPoint default NO
+ @return formated string
+ */
+- (NSString *)stringWithFormat:(NSString *)format allowZerosAfterDecimalPoint:(BOOL)allow;
+
+/**
+ Format number
+
+ @param format format
+ @param block block
+ @return formated string
+ */
+- (NSString *)stringWithFormat:(NSString *)format block:(nullable void (^)(NSNumberFormatter *fmt))block;
 @end

@@ -32,4 +32,24 @@
     return [fmt stringFromNumber:self];
 }
 
+- (NSString *)stringWithFormat:(NSString *)format allowZerosAfterDecimalPoint:(BOOL)allow
+{
+    NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
+    [fmt setPositiveFormat:format];
+    if (allow) {
+        fmt.minimumFractionDigits = [self componentsSeparatedByString:@"."].lastObject.length;
+    }
+    return [fmt stringFromNumber:self];
+}
+
+- (NSString *)stringWithFormat:(NSString *)format block:(nullable void (^)(NSNumberFormatter *fmt))block
+{
+    NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
+    [fmt setPositiveFormat:format];
+    if (block) {
+        block(fmt);
+    }
+    return [fmt stringFromNumber:self];
+}
+
 @end
