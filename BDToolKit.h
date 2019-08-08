@@ -43,6 +43,7 @@ SOFTWARE.
 #import "BDFreeStyleButton.h"
 #import "BDNavigationBar.h"
 #import "BDCountDownButton.h"
+#import "BDCollectionReusableView.h"
 
 //catagory
 #import "UIView+BD.h"
