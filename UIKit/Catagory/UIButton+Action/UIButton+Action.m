@@ -31,7 +31,12 @@
         UIViewController *vc = target;
         [vc.view endEditing:YES];
     }
-    
-    [super sendAction:action to:target forEvent:event];
+    // fix
+    [[self class] cancelPreviousPerformRequestsWithTarget:target selector:@selector(sendAction:to:forEvent:) object:nil];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [super sendAction:action to:target forEvent:event];
+    });
 }
+
+
 @end
