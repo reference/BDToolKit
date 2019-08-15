@@ -55,9 +55,8 @@
 /**
  Keep decimals, not rounding
 
- @param number number
  @param position position
  @return not rounding number string
  */
--(NSString *)notRounding:(float)number afterPoint:(int)position;
+-(NSString *)notRoundingAfterPoint:(int)position;
 @end
