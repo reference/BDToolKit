@@ -26,5 +26,6 @@
 /// overide event - (void)sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event for dissmiss all first responder
 
 @interface UIButton(Action)
-
+//default is NO
+@property (nonatomic,assign) BOOL enableQuickClick;
 @end
