@@ -50,4 +50,14 @@
  @return formated string
  */
 - (NSString *)stringWithFormat:(NSString *)format block:(nullable void (^)(NSNumberFormatter *fmt))block;
+
+
+/**
+ Keep decimals, not rounding
+
+ @param number number
+ @param position position
+ @return not rounding number string
+ */
+-(NSString *)notRounding:(float)number afterPoint:(int)position;
 @end
