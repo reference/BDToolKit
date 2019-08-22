@@ -51,11 +51,14 @@ static const char *kQuickClick = "kQuickClick";
         [super sendAction:action to:target forEvent:event];
     }
     else{
-        self.enabled = NO;
-        [super sendAction:action to:target forEvent:event];
+        static BOOL enable = YES;
+        if (enable) {
+            [super sendAction:action to:target forEvent:event];
+            enable = NO;
+        }
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            self.enabled = YES;
+            enable = YES;
         });
     }
 }
