@@ -39,4 +39,11 @@
     self.layer.cornerRadius = radius;
     self.layer.masksToBounds = YES;
 }
+
+- (IBAction)onButtons:(UIButton *)btn
+{
+    if (self.onClickedButtonsCallback) {
+        self.onClickedButtonsCallback(btn);
+    }
+}
 @end
