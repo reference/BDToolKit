@@ -36,7 +36,7 @@
 @property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bd_views;
 @property (nonatomic,assign) IBInspectable CGFloat radius;
 //callback
-@property (nonatomic,copy) void (^onClickedButtons)(UIButton *btn);
+@property (nonatomic,copy) void (^onClickedButtonsCallback)(UIButton *btn);
 
 - (IBAction)onButtons:(UIButton *)btn;
 @end
