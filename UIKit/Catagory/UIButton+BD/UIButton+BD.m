@@ -27,7 +27,7 @@
 
 - (void)addTarget:(nullable id)target action:(SEL _Nullable)action forControlEvents:(UIControlEvents)controlEvents
 {
-    NSArray *actions = [self actionsForTarget:target forControlEvent:UIControlEventTouchUpInside];
+    NSArray *actions = [self actionsForTarget:target forControlEvent:controlEvents];
 
     for (NSString *ac in actions) {
         [self removeTarget:target action:NSSelectorFromString(ac) forControlEvents:controlEvents];
