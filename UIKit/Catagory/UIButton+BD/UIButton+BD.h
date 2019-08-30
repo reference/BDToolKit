@@ -26,6 +26,6 @@
 @interface UIButton(BD)
 
 /// rewrite
-- (void)addTarget:(nullable id)target action:(SEL )action forControlEvents:(UIControlEvents)controlEvents;
+- (void)addTarget:(nullable id)target action:(SEL _Nullable)action forControlEvents:(UIControlEvents)controlEvents;
 
 @end

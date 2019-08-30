@@ -21,17 +21,20 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-#import "UIButton+BD.h"
+#import <Foundation/Foundation.h>
 
-@implementation UIButton(BD)
+NS_ASSUME_NONNULL_BEGIN
 
-- (void)addTarget:(nullable id)target action:(SEL _Nullable)action forControlEvents:(UIControlEvents)controlEvents
-{
-    NSArray *actions = [self actionsForTarget:target forControlEvent:UIControlEventTouchUpInside];
+@interface UINib(UIView)
 
-    for (NSString *ac in actions) {
-        [self removeTarget:target action:NSSelectorFromString(ac) forControlEvents:controlEvents];
-    }
-    [super addTarget:target action:action forControlEvents:controlEvents];
-}
+/**
+ view for nib
+
+ @param nibName nib name
+ @return any view
+ */
++ (id)viewForNib:(NSString *)nibName;
+
 @end
+
+NS_ASSUME_NONNULL_END

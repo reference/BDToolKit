@@ -93,8 +93,8 @@
 
 - (void)shareAppWithId:(NSString *)appId
 {
-    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    NSString *shareTitle = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *shareTitle = [infoDictionary objectForKey:@"CFBundleDisplayName"];
     
     UIImage *shareImage = [UIImage imageNamed:@"AppIcon60x60"];
     NSURL *shareUrl = [NSURL URLWithString:[NSString stringWithFormat:@"https://apps.apple.com/cn/app/id%@",appId]];

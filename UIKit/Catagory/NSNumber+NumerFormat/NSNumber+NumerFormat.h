@@ -31,7 +31,7 @@
  @param format format such as ###,###.###
  @return formated string
  */
-- (NSString *)stringWithFormat:(NSString *)format;
+- (NSString *_Nullable)stringWithFormat:(NSString *)format;
 
 /**
  Format number
@@ -58,5 +58,5 @@
  @param position position
  @return not rounding number string
  */
--(NSString *)notRoundingAfterPoint:(int)position;
+-(NSString *_Nullable)notRoundingAfterPoint:(int)position;
 @end

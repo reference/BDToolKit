@@ -54,6 +54,7 @@ pod 'BDToolKit'
 * UIView+Constraints
 * UIButton+Action
 * UIView+BorderLine
+* UINib+UIView
 
 ## BDUIKit
 

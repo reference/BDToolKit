@@ -21,17 +21,13 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-#import "UIButton+BD.h"
+#import "UINib+UIView.h"
 
-@implementation UIButton(BD)
+@implementation UINib(UIView)
 
-- (void)addTarget:(nullable id)target action:(SEL _Nullable)action forControlEvents:(UIControlEvents)controlEvents
++ (id)viewForNib:(NSString *)nibName
 {
-    NSArray *actions = [self actionsForTarget:target forControlEvent:UIControlEventTouchUpInside];
-
-    for (NSString *ac in actions) {
-        [self removeTarget:target action:NSSelectorFromString(ac) forControlEvents:controlEvents];
-    }
-    [super addTarget:target action:action forControlEvents:controlEvents];
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+    return [nib instantiateWithOwner:self options:nil].firstObject;
 }
 @end
