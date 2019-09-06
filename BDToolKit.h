@@ -70,6 +70,7 @@ SOFTWARE.
 #import "UIButton+Action.h"
 #import "UIView+BorderLine.h"
 #import "UINib+UIView.h"
+#import "UIScrollView+AutoAdjustScrollInsets.h"
 
 //controllers
 #import "BDViewController.h"
