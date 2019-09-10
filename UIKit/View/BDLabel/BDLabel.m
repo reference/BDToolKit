@@ -28,11 +28,29 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder]) {
+        self.textInsets = UIEdgeInsetsMake(self.topEdge, self.leftEdge, self.bottomEdge, self.rightEdge);
         self.radius = 0;
         self.borderColor = [UIColor clearColor];
         self.borderWidth = 0;
-        self.identifier = nil;
     }return self;
+}
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.textInsets = UIEdgeInsetsMake(self.topEdge, self.leftEdge, self.bottomEdge, self.rightEdge);
+        self.radius = 0;
+        self.borderColor = [UIColor clearColor];
+        self.borderWidth = 0;
+    }
+    return self;
+}
+
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.textInsets = UIEdgeInsetsMake(self.topEdge, self.leftEdge, self.bottomEdge, self.rightEdge);
+    }
+    return self;
 }
 
 - (void)setRadius:(CGFloat)radius
@@ -55,5 +73,21 @@
     self.layer.borderWidth = borderWidth;
     self.layer.masksToBounds = YES;
 }
+
+// 文字区域
+- (void)drawTextInRect:(CGRect)rect {
+    self.textInsets = UIEdgeInsetsMake(self.topEdge, self.leftEdge, self.bottomEdge, self.rightEdge);
+    [super drawTextInRect:UIEdgeInsetsInsetRect(rect, self.textInsets)];
+}
+
+// UILabel的内容区域
+- (CGSize)intrinsicContentSize {
+    self.textInsets = UIEdgeInsetsMake(self.topEdge, self.leftEdge, self.bottomEdge, self.rightEdge);
+    CGSize size = [super intrinsicContentSize];
+    size.width  += self.textInsets.left + self.textInsets.right;
+    size.height += self.textInsets.top + self.textInsets.bottom;
+    return size;
+}
+
 
 @end

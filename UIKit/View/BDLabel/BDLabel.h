@@ -27,5 +27,12 @@
 @property (nonatomic, assign) IBInspectable CGFloat radius;
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;
-@property (nonatomic, strong) IBInspectable NSString *identifier;
+
+/// Text content edge insets
+@property (nonatomic, assign) IBInspectable CGFloat leftEdge;
+@property (nonatomic, assign) IBInspectable CGFloat rightEdge;
+@property (nonatomic, assign) IBInspectable CGFloat topEdge;
+@property (nonatomic, assign) IBInspectable CGFloat bottomEdge;
+@property (nonatomic, assign) UIEdgeInsets textInsets;
+
 @end
