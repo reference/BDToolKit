@@ -94,6 +94,7 @@ pod 'BDToolKit'
 * NSObject+NSCoding
 * NSObject+Archive
 * NSString+PercentEncoding
+* NSURLComponents+Pairs
 
 ## License
 

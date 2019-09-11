@@ -88,5 +88,6 @@ SOFTWARE.
 #import "NSObject+Identifier.h"
 #import "NSMutableDictionary+BD.h"
 #import "NSString+PercentEncoding.h"
+#import "NSURLComponents+Pairs.h"
 
 #endif /* BDToolKit_h */
