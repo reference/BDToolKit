@@ -38,7 +38,7 @@
 
 /// push & pop
 - (void)pushViewController:(UIViewController *)vc animated:(BOOL)animated;
-- (void)popViewControllerAnimated:(BOOL)animated
+- (void)popViewControllerAnimated:(BOOL)animated;
 
 /// innner rate app
 - (void)rateAppWithId:(NSString *)appId;
