@@ -36,6 +36,10 @@
 - (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName;
 - (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName block:(void(^)(UIViewController *vc))block;
 
+/// push & pop
+- (void)pushViewController:(UIViewController *)vc animated:(BOOL)animated;
+- (void)popViewControllerAnimated:(BOOL)animated
+
 /// innner rate app
 - (void)rateAppWithId:(NSString *)appId;
 

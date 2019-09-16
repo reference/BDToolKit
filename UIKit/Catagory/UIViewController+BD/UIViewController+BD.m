@@ -56,6 +56,16 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)pushViewController:(UIViewController *)vc animated:(BOOL)animated
+{
+    [self.navigationController pushViewController:vc animated:animated];
+}
+
+- (void)popViewControllerAnimated:(BOOL)animated
+{
+    [self.navigationController popViewControllerAnimated:animated];
+}
+
 - (void)rateAppWithId:(NSString *)appId
 {
     //评价
