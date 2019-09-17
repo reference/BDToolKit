@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.4.7"
+  s.version      = "2.4.8"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -77,6 +77,12 @@ Pod::Spec.new do |s|
     s.subspec "UIViewController+BD" do |ss|
         ss.source_files  = "UIKit/Catagory/UIViewController+BD/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UIViewController+BD/*.h"
+    end
+
+    s.subspec "NSMutableArray+BDModel" do |ss|
+        ss.dependency 'BDToolKit/BDModel'
+        ss.source_files  = "UIKit/Catagory/NSMutableArray+BDModel/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSMutableArray+BDModel/*.h"
     end
 
     s.subspec "UIScrollView+AutoAdjustScrollInsets" do |ss|

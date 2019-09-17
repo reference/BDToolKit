@@ -56,6 +56,7 @@ pod 'BDToolKit'
 * UIView+BorderLine
 * UINib+UIView
 * UIScrollView+AutoAdjustScrollInsets
+* NSMutableArray+BDModel.h
 
 ## BDUIKit
 
