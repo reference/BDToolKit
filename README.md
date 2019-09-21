@@ -52,7 +52,6 @@ pod 'BDToolKit'
 * UIButton+BD
 * UIView+Tap
 * UIView+Constraints
-* UIButton+Action
 * UIView+BorderLine
 * UINib+UIView
 * UIScrollView+AutoAdjustScrollInsets
