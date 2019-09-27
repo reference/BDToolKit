@@ -89,5 +89,6 @@ SOFTWARE.
 #import "NSMutableDictionary+BD.h"
 #import "NSString+PercentEncoding.h"
 #import "NSURLComponents+Pairs.h"
+#import "NSData+DeviceToken.h"
 
 #endif /* BDToolKit_h */
