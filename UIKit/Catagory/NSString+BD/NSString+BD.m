@@ -199,6 +199,15 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 
+- (NSString *)trimPhoneNumber
+{
+    if (self) {
+        if ([self isIllegalPhoneNumber]) {
+            return [self stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
+        }
+    }return self;
+}
+
 - (NSString *)localizedString
 {
     return NSLocalizedString(self, nil);

@@ -40,6 +40,8 @@
 - (BOOL)isIllegal;
 
 - (NSString *)trim;
+/// trim phone number like 135****0890
+- (NSString *)trimPhoneNumber;
 
 //localized
 - (NSString *)localizedString;
