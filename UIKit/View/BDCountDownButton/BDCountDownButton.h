@@ -33,8 +33,6 @@ typedef void (^TouchedCountDownButtonHandler)(BDCountDownButton *bt,NSInteger ta
 
 @interface BDCountDownButton : UIButton
 @property (nonatomic,strong) id userInfo;
-//end second
-@property (nonatomic,assign) IBInspectable NSInteger second;
 ///倒计时按钮点击回调
 - (void)countDownButtonHandler:(TouchedCountDownButtonHandler)touchedCountDownButtonHandler;
 //倒计时时间改变回调

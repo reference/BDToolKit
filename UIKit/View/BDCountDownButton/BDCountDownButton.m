@@ -49,14 +49,7 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder]) {
-        self.second = 0;
     }return self;
-}
-
-- (void)setSecond:(NSInteger)s
-{
-    _second = s;
-    [self startCountDownWithSecond:s];
 }
 
 #pragma -mark touche action
