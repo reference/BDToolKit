@@ -62,7 +62,16 @@
     dispatch_once(&onceToken, ^{
         UITextField *textField = [[UITextField alloc] init];
         textField.placeholder = @" ";
-        color = [textField valueForKeyPath:@"_placeholderLabel.textColor"];
+        #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000
+            if (@available(iOS 13.0, *)) {
+                color = [UIColor colorWithRed:128/255.f green:128/255.f blue:128/255.f alpha:0.7];
+            } else
+        #endif
+            {
+        #if __IPHONE_OS_VERSION_MIN_REQUIRED < 130000
+                color = [UIColor lightTextColor];
+        #endif
+            }
     });
     return color;
 }
