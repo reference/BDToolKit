@@ -71,6 +71,7 @@ SOFTWARE.
 #import "UINib+UIView.h"
 #import "UIScrollView+AutoAdjustScrollInsets.h"
 #import "NSMutableArray+BDModel.h"
+#import "UINavigationController+Pop.h"
 
 //controllers
 #import "BDViewController.h"
