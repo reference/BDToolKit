@@ -24,7 +24,7 @@
 #import <UIKit/UIKit.h>
 
 //IB_DESIGNABLE
-@interface BDView : UIView
+@interface BDView : UIView<UITextFieldDelegate>
 @property (nonatomic,strong) IBOutletCollection(UILabel) NSArray <UILabel *> *labels;
 @property (nonatomic,strong) IBOutletCollection(UIImageView) NSArray <UIImageView *> *imageViews;
 @property (nonatomic,strong) IBOutletCollection(UIView) NSArray <UIView *> *views;

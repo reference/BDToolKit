@@ -46,4 +46,19 @@
         self.onClickedButtonsCallback(btn);
     }
 }
+
+#pragma mark - textfield delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField.returnKeyType == UIReturnKeyDone || textField.returnKeyType == UIReturnKeyGo || textField.returnKeyType == UIReturnKeySend) {
+        [textField resignFirstResponder];
+    }
+    if (textField.returnKeyType == UIReturnKeyNext) {
+        if ([self.textFields textFieldForTag:textField.tag+1]) {
+            [[self.textFields textFieldForTag:textField.tag+1] becomeFirstResponder];
+        }
+    }
+    return YES;
+}
 @end
