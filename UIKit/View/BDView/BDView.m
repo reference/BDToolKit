@@ -65,8 +65,11 @@
         [textField resignFirstResponder];
     }
     if (textField.returnKeyType == UIReturnKeyNext) {
-        if ([self.textFields textFieldForTag:textField.tag+1]) {
-            [[self.textFields textFieldForTag:textField.tag+1] becomeFirstResponder];
+        for (UITextField *tf in self.textFields) {
+            if (tf.tag == textField.tag+1) {
+                [tf becomeFirstResponder];
+                break;
+            }
         }
     }
     return YES;

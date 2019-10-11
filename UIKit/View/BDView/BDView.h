@@ -22,7 +22,6 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
-#import "NSArray+BDUIKIT.h"
 
 //IB_DESIGNABLE
 @interface BDView : UIView<UITextFieldDelegate>
