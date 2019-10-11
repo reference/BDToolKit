@@ -26,6 +26,16 @@
 
 @implementation BDView
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    if (self.textFields.count) {
+        for (UITextField *tf in self.textFields) {
+            tf.delegate = self;
+        }
+    }
+}
+
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder]) {
