@@ -30,7 +30,9 @@
 - (BOOL)hasChinese; // 是否包含中文
 - (BOOL)isEmpty;
 - (BOOL)isNotEmpty;
-/**
+- (BOOL)isEmail;
+- (BOOL)isResidentIdentificationCard; //是否身份证
+/*
  判断是否汉语非法字符
  
  非法字符是指 除数字 字母以外的所有字符
