@@ -69,4 +69,13 @@
     self.attributedText = string;
 }
 
+- (void)addMiddleLine
+{
+    //中划线
+    NSDictionary *attribtDic = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
+    NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:self.text attributes:attribtDic];
+    // 赋值
+    self.attributedText = attribtStr;
+}
+
 @end
