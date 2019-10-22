@@ -32,6 +32,7 @@
 {
     [super viewDidLoad];
     self.dataArray = [NSMutableArray array];
+    self.lock = [[NSLock alloc] init];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

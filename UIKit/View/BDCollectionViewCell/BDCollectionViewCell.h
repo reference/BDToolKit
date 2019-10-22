@@ -38,6 +38,7 @@
 @property (nonatomic,strong) IBOutletCollection(BDStackView) NSArray <BDStackView *> *bd_stackViews;
 
 @property (nonatomic,copy) void (^onClickedButtons)(NSInteger tag);
+@property (nonatomic,copy) void (^onClickedButtonsCallback)(UIButton *btn);
 
 - (IBAction)onButtons:(UIButton *)btn;
 @end

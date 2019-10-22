@@ -72,6 +72,7 @@ SOFTWARE.
 #import "UIScrollView+AutoAdjustScrollInsets.h"
 #import "NSMutableArray+BDModel.h"
 #import "UINavigationController+Pop.h"
+#import "NSObject+Ivar.h"
 
 //controllers
 #import "BDViewController.h"

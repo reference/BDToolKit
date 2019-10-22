@@ -21,40 +21,16 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-#import "BDTableViewController.h"
+#import <Foundation/Foundation.h>
 
-@interface BDTableViewController ()
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NSObject(Ivar)
+
+/// get private property
+/// @param name property name
+- (id)getPrivateProperty:(NSString *)name;
+
 @end
 
-@implementation BDTableViewController
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.dataArray = [NSMutableArray array];
-    self.lock = [[NSLock alloc] init];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if (self.prepareForSegueBlock) {
-        self.prepareForSegueBlock(segue.destinationViewController, sender);
-    }
-}
-
-- (void)performSegueWithClass:(Class)cls sender:(id)sender
-{
-    [self performSegueWithIdentifier:NSStringFromClass(cls) sender:sender];
-}
-
-- (void)performSegueWithClass:(Class)cls sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback
-{
-    self.prepareForSegueBlock = prepareCallback;
-    [self performSegueWithClass:cls sender:sender];
-}
-
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback
-{
-    self.prepareForSegueBlock = prepareCallback;
-    [self performSegueWithIdentifier:identifier sender:sender];
-}
-@end
+NS_ASSUME_NONNULL_END

@@ -29,5 +29,8 @@
     if (self.onClickedButtons) {
         self.onClickedButtons(btn.tag);
     }
+    if (self.onClickedButtonsCallback) {
+        self.onClickedButtonsCallback(btn);
+    }
 }
 @end

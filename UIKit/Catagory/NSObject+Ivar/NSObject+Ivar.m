@@ -21,40 +21,21 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-#import "BDTableViewController.h"
+#import "NSObject+Ivar.h"
+#import <objc/runtime.h>
 
-@interface BDTableViewController ()
-@end
-
-@implementation BDTableViewController
-- (void)viewDidLoad
+@implementation NSObject(Ivar)
+- (id)getPrivateProperty:(NSString *)name
 {
-    [super viewDidLoad];
-    self.dataArray = [NSMutableArray array];
-    self.lock = [[NSLock alloc] init];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if (self.prepareForSegueBlock) {
-        self.prepareForSegueBlock(segue.destinationViewController, sender);
-    }
-}
-
-- (void)performSegueWithClass:(Class)cls sender:(id)sender
-{
-    [self performSegueWithIdentifier:NSStringFromClass(cls) sender:sender];
-}
-
-- (void)performSegueWithClass:(Class)cls sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback
-{
-    self.prepareForSegueBlock = prepareCallback;
-    [self performSegueWithClass:cls sender:sender];
-}
-
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender prepareForSegueBlock:(PrepareForSegueBlock)prepareCallback
-{
-    self.prepareForSegueBlock = prepareCallback;
-    [self performSegueWithIdentifier:identifier sender:sender];
+    if (self) {
+        Ivar iVar = class_getInstanceVariable([self class], [name UTF8String]);
+        
+        if (iVar == nil) {
+            iVar = class_getInstanceVariable([self class], [[NSString stringWithFormat:@"_%@",name] UTF8String]);
+        }
+        
+        id propertyVal = object_getIvar(self, iVar);
+        return propertyVal;
+    }return self;
 }
 @end
