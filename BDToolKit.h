@@ -74,6 +74,7 @@ SOFTWARE.
 #import "NSMutableArray+BDModel.h"
 #import "UINavigationController+Pop.h"
 #import "NSObject+Ivar.h"
+#import "UIButton+Layout.h"
 
 //controllers
 #import "BDViewController.h"

@@ -42,6 +42,7 @@ static const char *kTapGesture = "kTapGesture";
 - (void)addTapGesture:(BDTapGestureBlock)block
 {
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onBDTapGesture:)];
+    self.userInteractionEnabled = YES;
     self.tapGestureBlock = block;
     [self addGestureRecognizer:tap];
 }

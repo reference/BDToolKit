@@ -58,6 +58,7 @@ pod 'BDToolKit'
 * NSMutableArray+BDModel.h
 * UINavigationController+Pop
 * NSObject+Ivar
+* UIButton+Layout
 
 ## BDUIKit
 
