@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.6.3"
+  s.version      = "2.6.4"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/reference/BDToolKit.git", :tag => "#{s.version}" }
 
-  s.frameworks = "UIKit", "Foundation", "WebKit", "AVFoundation", "QuartzCore", "StoreKit"
+  s.frameworks = "UIKit", "Foundation", "WebKit", "AVFoundation", "QuartzCore", "StoreKit", "Security"
   s.requires_arc = true
 
   s.source_files  =  "BDToolKit.h"
@@ -72,6 +72,28 @@ Pod::Spec.new do |s|
     s.subspec "UIButton+BD" do |ss|
         ss.source_files  = "UIKit/Catagory/UIButton+BD/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UIButton+BD/*.h"
+    end
+    
+    s.subspec "NSData+Encryption" do |ss|
+        ss.source_files  = "UIKit/Catagory/NSData+Encryption/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSData+Encryption/*.h"
+    end
+    
+    s.subspec "NSString+Encryption" do |ss|
+        ss.dependency 'BDToolKit/NSData+Encryption'
+        ss.source_files  = "UIKit/Catagory/NSString+Encryption/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSString+Encryption/*.h"
+    end
+    
+    s.subspec "NSString+RandomKey" do |ss|
+        ss.dependency 'BDToolKit/NSString+Encryption'
+        ss.source_files  = "UIKit/Catagory/NSString+RandomKey/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSString+RandomKey/*.h"
+    end
+    
+    s.subspec "NSData+RandomData" do |ss|
+        ss.source_files  = "UIKit/Catagory/NSData+RandomData/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSData+RandomData/*.h"
     end
 
     s.subspec "UIViewController+BD" do |ss|

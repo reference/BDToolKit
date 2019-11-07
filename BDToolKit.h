@@ -75,6 +75,10 @@ SOFTWARE.
 #import "UINavigationController+Pop.h"
 #import "NSObject+Ivar.h"
 #import "UIButton+Layout.h"
+#import "NSData+Encryption.h"
+#import "NSString+Encryption.h"
+#import "NSString+RandomKey.h"
+#import "NSData+RandomData.h"
 
 //controllers
 #import "BDViewController.h"

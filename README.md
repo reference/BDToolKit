@@ -59,6 +59,10 @@ pod 'BDToolKit'
 * UINavigationController+Pop
 * NSObject+Ivar
 * UIButton+Layout
+* NSData+Encryption.h
+* NSString+Encryption.h
+* NSString+RandomKey.h
+* NSData+RandomData.h
 
 ## BDUIKit
 
