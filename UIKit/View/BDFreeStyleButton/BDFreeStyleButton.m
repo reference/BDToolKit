@@ -25,17 +25,10 @@
 
 @implementation BDFreeStyleButton
 
-- (void)setTitle:(NSString *)title
-{
-    _title = title;
-    self.labels.firstObject.text = title;
-    self.identifier = nil;
-}
-
 - (IBAction)onClick:(id)sender
 {
-    if (self.pressed) {
-        self.pressed();
+    if (self.onButtonClick) {
+        self.onButtonClick();
     }
 }
 @end

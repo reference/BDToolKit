@@ -34,7 +34,7 @@
 
 /// push view controller
 - (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName;
-- (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName block:(void(^)(UIViewController *vc))block;
+- (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName block:(void(^)(UIViewController *viewController))block;
 
 /// push & pop
 - (void)pushViewController:(UIViewController *)vc animated:(BOOL)animated;

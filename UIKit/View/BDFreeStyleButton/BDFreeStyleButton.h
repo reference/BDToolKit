@@ -24,7 +24,7 @@
 #import "BDView.h"
 
 @interface BDFreeStyleButton : BDView
-@property (nonatomic,strong) NSString *title;
-@property (nonatomic,strong) IBInspectable NSString *identifier;
-@property (nonatomic,copy) void (^pressed)(void);
+@property (nonatomic,strong) IBOutlet UILabel *titleLabel;
+@property (nonatomic,strong) IBOutlet UIImageView *imageView;
+@property (nonatomic,copy) void (^onButtonClick)(void);
 @end
