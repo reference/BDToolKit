@@ -57,6 +57,7 @@ pod 'BDToolKit'
 * UIScrollView+AutoAdjustScrollInsets
 * NSMutableArray+BDModel.h
 * UINavigationController+Pop
+* UIViewController+AutoRotaion
 * NSObject+Ivar
 * UIButton+Layout
 * NSData+Encryption.h
