@@ -22,31 +22,13 @@
  SOFTWARE.
  */
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "UIViewController+AutoRotaion.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIViewController(AutoRotaion)
-// 当前方向
-@property (nonatomic, assign) UIInterfaceOrientationMask ar_orientationMask;
-// 是否子控制器
-@property (nonatomic, assign) BOOL ar_isChildController;
-/// 支持的方向
-- (UIInterfaceOrientationMask)ar_supportedOrientations;
-/// 转到指定方向
-- (void)ar_turnToOrientation:(UIInterfaceOrientationMask)orientation;
-/// 转为竖屏
-- (void)ar_turnToPortrait;
-/// 转为横屏
-- (void)ar_turnToLandscape;
-/// 添加特殊处理Controller，用于处理如 AlertContoller 等情况
-+ (void)ar_addSpecialControllers:(NSArray<NSString *> *)controllers;
-/// 移除特殊处理Controller
-+ (void)ar_removeSpecialControllers:(NSArray<NSString *> *)controllers;
-///
-+ (BOOL)setOrientation:(UIInterfaceOrientationMask)orientation;
-///
-+ (UIInterfaceOrientationMask)windowTopViewControllerOrientationMask;
+@interface UIResponder(AutoRotation)
+
+- (UIInterfaceOrientationMask)ar_application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 @end
 
 NS_ASSUME_NONNULL_END

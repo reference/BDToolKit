@@ -299,17 +299,3 @@ static NSMutableSet<NSString *> *kSpecialControllers;
 }
 
 @end
-
-@implementation UIResponder(AutoRotation)
-
-+ (void)load {
-    ar_exchangeMethod(self, @selector(application:supportedInterfaceOrientationsForWindow:), self, @selector(ar_application:supportedInterfaceOrientationsForWindow:));
-}
-
-- (UIInterfaceOrientationMask)ar_application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-    UIInterfaceOrientationMask mask = [UIViewController windowTopViewControllerOrientationMask];
-    [UIViewController setOrientation:mask];
-    return mask;
-}
-
-@end

@@ -73,13 +73,15 @@ SOFTWARE.
 #import "UIScrollView+AutoAdjustScrollInsets.h"
 #import "NSMutableArray+BDModel.h"
 #import "UINavigationController+Pop.h"
-#import "UIViewController+AutoRotaion.h"
 #import "NSObject+Ivar.h"
 #import "UIButton+Layout.h"
 #import "NSData+Encryption.h"
 #import "NSString+Encryption.h"
 #import "NSString+RandomKey.h"
 #import "NSData+RandomData.h"
+#import "UIImage+QRCode.h"
+#import "UIViewController+AutoRotaion.h"
+#import "UIResponder+AutoRotation.h"
 
 //controllers
 #import "BDViewController.h"

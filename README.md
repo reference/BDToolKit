@@ -64,6 +64,9 @@ pod 'BDToolKit'
 * NSString+Encryption.h
 * NSString+RandomKey.h
 * NSData+RandomData.h
+* UIImage+QRCode
+* UIViewController+AutoRotaion
+* UIResponder+AutoRotation
 
 ## BDUIKit
 
