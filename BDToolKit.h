@@ -82,6 +82,7 @@ SOFTWARE.
 #import "UIImage+QRCode.h"
 #import "UIViewController+AutoRotaion.h"
 #import "UIResponder+AutoRotation.h"
+#import "UIView+ShadowPath.h"
 
 //controllers
 #import "BDViewController.h"

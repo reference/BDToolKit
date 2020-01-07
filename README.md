@@ -67,6 +67,7 @@ pod 'BDToolKit'
 * UIImage+QRCode
 * UIViewController+AutoRotaion
 * UIResponder+AutoRotation
+* UIView+ShadowPath
 
 ## BDUIKit
 
