@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.6.8"
+  s.version      = "2.6.9"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -194,6 +194,11 @@ Pod::Spec.new do |s|
         ss.dependency 'BDToolKit/BDStackView'
         ss.source_files  = "UIKit/View/BDTableViewCell/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDTableViewCell/*.h"
+    end
+    
+    s.subspec "BDAlertView" do |ss|
+        ss.source_files  = "UIKit/View/BDAlertView/*.{h,m}"
+        ss.public_header_files = "UIKit/View/BDAlertView/*.h"
     end
     
     s.subspec "BDCollectionViewFlowLayout" do |ss|
