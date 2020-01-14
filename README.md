@@ -92,7 +92,6 @@ pod 'BDToolKit'
 * BDCountDownButton
 * BDCollectionReusableView
 * BDCollectionViewFlowLayout
-* BDAlertView
 
 ### Utils
 * BDAudioPlayer
