@@ -57,6 +57,13 @@
     }
 }
 
+- (IBAction)onSwitches:(UISwitch *)swt
+{
+    if (self.onSwitchCallback) {
+        self.onSwitchCallback(swt);
+    }
+}
+
 #pragma mark - textfield delegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
