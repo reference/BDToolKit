@@ -108,6 +108,14 @@
     return [p evaluateWithObject:self];
 }
 
+- (NSString*)securityDisplayMobilePhone
+{
+    if (self) {
+       return [self stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
+    }
+    return self;
+}
+
 - (BOOL)isNotEmpty
 {
     return ![self isEmpty];

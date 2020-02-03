@@ -32,6 +32,8 @@
 - (BOOL)isNotEmpty;
 - (BOOL)isEmail;
 - (BOOL)isResidentIdentificationCard; //是否身份证
+//short mobile phone like 131****2930
+- (NSString*)securityDisplayMobilePhone;
 /*
  判断是否汉语非法字符
  

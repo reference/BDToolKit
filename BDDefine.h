@@ -46,4 +46,8 @@ SOFTWARE.
 //iPhoneX所有系列
 #define IS_PhoneXAll (IS_IPHONE_X || IS_IPHONE_Xr || IS_IPHONE_Xs_Max)
 
+/// UIKit Shortcut
+
+#define __IMG(NAME) [UIImage imageNamed:NAME]
+#define __STRFMT(FMT) [NSString stringWithFormat:FMT]
 #endif /* BDDefine_h */
