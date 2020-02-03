@@ -83,6 +83,7 @@ SOFTWARE.
 #import "UIViewController+AutoRotaion.h"
 #import "UIResponder+AutoRotation.h"
 #import "UIView+ShadowPath.h"
+#import "MPMediaItem+CoverToNSData.h"
 
 //controllers
 #import "BDViewController.h"

@@ -68,6 +68,7 @@ pod 'BDToolKit'
 * UIViewController+AutoRotaion
 * UIResponder+AutoRotation
 * UIView+ShadowPath
+* MPMediaItem+CoverToNSData
 
 ## BDUIKit
 

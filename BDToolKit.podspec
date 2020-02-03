@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.7.1"
+  s.version      = "2.7.2"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/reference/BDToolKit.git", :tag => "#{s.version}" }
 
-  s.frameworks = "UIKit", "Foundation", "WebKit", "AVFoundation", "QuartzCore", "StoreKit", "Security"
+  s.frameworks = "UIKit", "Foundation", "WebKit", "AVFoundation", "QuartzCore", "StoreKit", "Security", "AVFoundation", "MediaPlayer"
   s.requires_arc = true
 
   s.source_files  =  "BDToolKit.h"
@@ -57,6 +57,11 @@ Pod::Spec.new do |s|
     s.subspec "UILabel+NSNumberFormat" do |ss|
         ss.source_files  = "UIKit/Catagory/UILabel+NSNumberFormat/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UILabel+NSNumberFormat/*.h"
+    end
+    
+    s.subspec "MPMediaItem+CoverToNSData" do |ss|
+        ss.source_files  = "UIKit/Catagory/MPMediaItem+CoverToNSData/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/MPMediaItem+CoverToNSData/*.h"
     end
     
     s.subspec "UIView+ShadowPath" do |ss|
