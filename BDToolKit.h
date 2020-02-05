@@ -45,6 +45,7 @@ SOFTWARE.
 #import "BDCountDownButton.h"
 #import "BDCollectionReusableView.h"
 #import "BDCollectionViewFlowLayout.h"
+#import "BDAutoScrollLabel.h"
 
 //catagory
 #import "UIView+BD.h"
