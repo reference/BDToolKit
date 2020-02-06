@@ -110,7 +110,7 @@
 
 - (NSString*)securityDisplayMobilePhone
 {
-    if (self) {
+    if (self && [self trim].length == 11) {
        return [self stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
     }
     return self;
