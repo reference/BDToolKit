@@ -93,10 +93,11 @@ pod 'BDToolKit'
 * BDCountDownButton
 * BDCollectionReusableView
 * BDCollectionViewFlowLayout
-* BDAutoScrollLabel.h
+* BDAutoScrollLabel
 
 ### Utils
 * BDAudioPlayer
+* BDAnimation
 
 ## Foundation
 

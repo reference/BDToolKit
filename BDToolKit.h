@@ -93,6 +93,7 @@ SOFTWARE.
 
 //Utils
 #import "BDAudioPlayer.h"
+#import "BDAnimation.h"
 
 /// FOUNDATION
 #import "BDModel.h"
