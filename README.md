@@ -98,6 +98,7 @@ pod 'BDToolKit'
 ### Utils
 * BDAudioPlayer
 * BDAnimation
+* BDComponentFactory
 
 ## Foundation
 

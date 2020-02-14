@@ -50,4 +50,7 @@ SOFTWARE.
 
 #define __IMG(NAME) [UIImage imageNamed:NAME]
 #define __STRFMT(FMT) [NSString stringWithFormat:FMT]
+#define __SYSTEM_FONT(X) [UIFont systemFontOfSize:X]
+#define __BOLD_FONT(X) [UIFont boldSystemFontOfSize:X]
+
 #endif /* BDDefine_h */
