@@ -157,38 +157,6 @@
     return sc;
 }
 
-+ (UIWebView *)webViewWithFrame:(CGRect)frame delegate:(id<UIWebViewDelegate>)delegate supperView:(UIView *)supperView
-{
-    UIWebView *web = [[UIWebView alloc] initWithFrame:frame];
-    web.scalesPageToFit = YES;
-    web.scrollView.showsHorizontalScrollIndicator = NO;
-    web.scrollView.showsVerticalScrollIndicator = NO;
-    web.delegate = delegate;
-    
-    //隐藏滚动条和上下滚动时出边界的后面的黑色的背景
-    web.backgroundColor=[UIColor clearColor];
-    for (UIView *aView in [web subviews])
-    {
-        if ([aView isKindOfClass:[UIScrollView class]])
-        {
-            [(UIScrollView *)aView setShowsVerticalScrollIndicator:NO]; //右侧的滚动条 （水平的类似）
-            
-            for (UIView *shadowView in aView.subviews)
-            {
-                if ([shadowView isKindOfClass:[UIImageView class]])
-                {
-                    shadowView.hidden = YES;  //上下滚动出边界时的黑色的图片 也就是拖拽后的上下阴影
-                }
-            }
-        } 
-    }
-    
-    if (supperView) {
-        [supperView addSubview:web];
-    }
-    return web;
-}
-
 + (UIButton *)blueStyleButtonWithWidth:(CGFloat)width
                                  origin:(CGPoint)point
                                   title:(NSString *)title
