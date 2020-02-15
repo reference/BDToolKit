@@ -94,19 +94,19 @@
     } completion:^(BOOL finished){
         [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^(void){
             //弹起
-            animationView.frame = CGRectMake(frame.origin.x, frame.origin.y-20, frame.size.width, frame.size.height);
+            view.frame = CGRectMake(frame.origin.x, frame.origin.y-20, frame.size.width, frame.size.height);
         } completion:^(BOOL finished){
             [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^(void){
                 //下降
-                animationView.frame = frame;
+                view.frame = frame;
             } completion:^(BOOL finished){
                 [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^(void){
                     //弹起
-                    animationView.frame = CGRectMake(frame.origin.x, frame.origin.y-10, frame.size.width, frame.size.height);
+                    view.frame = CGRectMake(frame.origin.x, frame.origin.y-10, frame.size.width, frame.size.height);
                 } completion:^(BOOL finished){
                     //下降
                     [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^(void){
-                        animationView.frame = frame;
+                        view.frame = frame;
                     } completion:^(BOOL finished){
                     }];
                 }];
