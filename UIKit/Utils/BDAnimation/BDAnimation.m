@@ -88,7 +88,7 @@
 
 - (void)shootOutView:(UIView *)view
 {
-    CGRect frame = animationView.frame;
+    CGRect frame = view.frame;
     [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^(void){
         
     } completion:^(BOOL finished){
