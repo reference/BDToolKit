@@ -48,8 +48,8 @@ typedef void (^AnimationConpletionBlock)(void);
 
 /// turn the view big and small
 /// @param view  view
-/// @param vlues  path values
-- (void)bigAndSmallView:(UIView *)view repeatCount:(float)rCount duration:(float)duration pathValues:(NSArray *)vlues;
+/// @param values  path values
+- (void)bigAndSmallView:(UIView *)view repeatCount:(float)rCount duration:(float)duration pathValues:(NSArray *)values;
 
 /// Rotate the view
 /// @param view view

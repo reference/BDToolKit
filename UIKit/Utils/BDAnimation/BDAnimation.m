@@ -115,14 +115,13 @@
     }];
 }
 
-- (void)bigAndSmallView:(UIView *)view repeatCount:(float)rCount duration:(float)duration pathValues:(NSArray *)vlues
+- (void)bigAndSmallView:(UIView *)view repeatCount:(float)rCount duration:(float)duration pathValues:(NSArray *)values
 {
     [view.layer removeAllAnimations];
     CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     animation.repeatCount = rCount;
     animation.duration = duration;// 动画时间
-    animation.values = values;
-    if (vlues) {
+    if (values) {
         animation.values = values;
     }else{
         NSMutableArray *vl = [NSMutableArray array];
