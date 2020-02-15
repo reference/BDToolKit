@@ -42,6 +42,21 @@ typedef void (^AnimationConpletionBlock)(void);
 /// @param completion animationCompletion
 - (void)moveView:(UIView *)fromView toView:(UIView *)toView controlPoint1:(CGPoint)controlPoint1 controlPoint2:(CGPoint)controlPoint2 imgView:(UIImageView *)imgView completion:(AnimationConpletionBlock)completion;
 
+/// Move up and down in
+/// @param view view
+- (void)shootOutView:(UIView *)view;
+
+/// turn the view big and small
+/// @param view  view
+/// @param vlues  path values
+- (void)bigAndSmallView:(UIView *)view repeatCount:(float)rCount duration:(float)duration pathValues:(NSArray *)vlues;
+
+/// Rotate the view
+/// @param view view
+/// @param clockwise DEFAULT NO
+/// @param rCount rcount
+/// @param duration duration
+- (void)rotateView:(UIView *)view clockwise:(BOOL)clockwise repeatCount:(float)rCount duration:(float)duration;
 @end
 
 NS_ASSUME_NONNULL_END

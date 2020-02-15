@@ -170,7 +170,7 @@
 	[button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	button.titleLabel.textAlignment = NSTextAlignmentCenter;
     
-	button.backgroundColor = COLOR_LIGHT_BULUE;
+	button.backgroundColor = [UIColor colorWithRed:0/255.f green:122/255.f blue:255/255.f alpha:1];
 	button.layer.cornerRadius = 5;
 //	button.layer.borderWidth = 1;
 //	button.layer.borderColor = COLOR_RGBA(213.0, 213.0, 213.0, 1.0).CGColor;

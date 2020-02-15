@@ -86,19 +86,81 @@
     [_layer addAnimation:groups forKey:@"group"];
 }
 
+- (void)shootOutView:(UIView *)view
+{
+    CGRect frame = animationView.frame;
+    [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^(void){
+        
+    } completion:^(BOOL finished){
+        [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^(void){
+            //弹起
+            animationView.frame = CGRectMake(frame.origin.x, frame.origin.y-20, frame.size.width, frame.size.height);
+        } completion:^(BOOL finished){
+            [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^(void){
+                //下降
+                animationView.frame = frame;
+            } completion:^(BOOL finished){
+                [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^(void){
+                    //弹起
+                    animationView.frame = CGRectMake(frame.origin.x, frame.origin.y-10, frame.size.width, frame.size.height);
+                } completion:^(BOOL finished){
+                    //下降
+                    [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^(void){
+                        animationView.frame = frame;
+                    } completion:^(BOOL finished){
+                    }];
+                }];
+            }];
+        }];
+    }];
+}
+
+- (void)bigAndSmallView:(UIView *)view repeatCount:(float)rCount duration:(float)duration pathValues:(NSArray *)vlues
+{
+    [view.layer removeAllAnimations];
+    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.repeatCount = rCount;
+    animation.duration = duration;// 动画时间
+    animation.values = values;
+    if (vlues) {
+        animation.values = values;
+    }else{
+        NSMutableArray *vl = [NSMutableArray array];
+        [vl addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
+        [vl addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.1, 1.1, 1.0)]];
+        [vl addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.2, 1.2, 1.0)]];
+        [vl addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.3, 1.3, 1.0)]];
+        [vl addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.2, 1.2, 1.0)]];
+        [vl addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.1, 1.1, 1.0)]];
+        [vl addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
+        animation.values = vl;
+    }
+    [view.layer addAnimation:animation forKey:@"shake"];
+}
+
+- (void)rotateView:(UIView *)view clockwise:(BOOL)clockwise repeatCount:(float)rCount duration:(float)duration
+{
+    [view.layer removeAllAnimations];
+    CABasicAnimation *rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat:M_PI*(clockwise?2.0:-2.0)];//逆时针
+    rotationAnimation.duration = duration;
+    rotationAnimation.repeatCount = rCount;
+    [view.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+}
+
 #pragma mark - CAAnimationDelegate
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    if (anim == [_layer animationForKey:@"group"]) {
-        // 执行完成remove掉layer
+//    if (anim == [_layer animationForKey:@"group"]) {
         [_layer removeFromSuperlayer];
         _layer = nil;
         
         if (self.completionBlock) {
             self.completionBlock();
         }
-    }
+//    }
 }
 
 @end
