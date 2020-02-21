@@ -64,6 +64,13 @@
     }
 }
 
+- (IBAction)onFreeStyleButtons:(BDFreeStyleButton *)btn
+{
+    if (self.onClickedFreeStyleButtonsCallback) {
+        self.onClickedFreeStyleButtonsCallback(btn);
+    }
+}
+
 #pragma mark - textfield delegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
