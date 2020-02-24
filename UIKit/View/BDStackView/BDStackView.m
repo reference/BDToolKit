@@ -24,4 +24,12 @@
 #import "BDStackView.h"
 
 @implementation BDStackView
+
+- (IBAction)onButtons:(UIButton *)btn
+{
+    if (self.onClickedButtonsCallback) {
+        self.onClickedButtonsCallback(btn);
+    }
+}
+
 @end

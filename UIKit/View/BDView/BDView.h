@@ -22,7 +22,6 @@
  SOFTWARE.
  */
 #import <UIKit/UIKit.h>
-#import "BDFreeStyleButton.h"
 
 //IB_DESIGNABLE
 @interface BDView : UIView<UITextFieldDelegate>
@@ -36,14 +35,11 @@
 @property (nonatomic,strong) IBOutletCollection(UITableView) NSArray <UITableView *> *tableViews;
 @property (nonatomic,strong) IBOutletCollection(UISwitch) NSArray <UISwitch *> *switches;
 @property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDView *> *bd_views;
-@property (nonatomic,strong) IBOutletCollection(BDFreeStyleButton) NSArray <BDFreeStyleButton *> *freeStyleButtons;
 @property (nonatomic,assign) IBInspectable CGFloat radius;
 //callback
 @property (nonatomic,copy) void (^onClickedButtonsCallback)(UIButton *btn);
-@property (nonatomic,copy) void (^onClickedFreeStyleButtonsCallback)(BDFreeStyleButton *btn);
 @property (nonatomic,copy) void (^onSwitchCallback)(UISwitch *swt);
 
 - (IBAction)onButtons:(UIButton *)btn;
 - (IBAction)onSwitches:(UISwitch *)swt;
-- (IBAction)onFreeStyleButtons:(BDFreeStyleButton *)btn;
 @end
