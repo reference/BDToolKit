@@ -59,4 +59,6 @@
 
 //date
 - (NSDate *)dateWithFormat:(NSString *)format;
+
++ (NSString *)stringWithValue:(id)value baseIn:(int)baseIn baseOut:(int)baseOut;
 @end

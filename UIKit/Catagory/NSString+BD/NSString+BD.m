@@ -256,4 +256,57 @@
     }return nil;
 }
 
++ (NSString *)stringWithValue:(id)value baseIn:(int)baseIn baseOut:(int)baseOut uppercase:(BOOL)uppercase {
+    // String
+    NSString *str = nil;
+    if ([value isKindOfClass:NSNumber.class]) {
+        str = [((NSNumber *)value) stringValue];
+    } else if ([value isKindOfClass:NSString.class]) {
+        str = value;
+    } else {
+        return nil;
+    }
+    str = uppercase ? [str uppercaseString] : [str lowercaseString];
+    // Alphabet
+    NSString *alphabet = uppercase ? @"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" : @"0123456789abcdefghijklmnopqrstuvwxyz";
+    NSMutableArray *ALPHABET = [[NSMutableArray alloc] initWithCapacity:alphabet.length];
+    for (int i = 0; i < alphabet.length; i++) {
+        [ALPHABET addObject:[alphabet substringWithRange:NSMakeRange(i, 1)]];
+    }
+    // Base
+    if (baseIn == baseOut) {
+        return str;
+    }
+    if (baseIn < 2 || baseIn > alphabet.length ||
+        baseOut < 2 || baseOut > alphabet.length) {
+        return nil;
+    }
+    // Array
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    for (int i = 0; i < str.length; i++) {
+        for (int l = (int)arr.count - 1; l >= 0; l--) {
+            arr[l] = @([arr[l] intValue] * baseIn);
+        }
+        if (arr.count == 0) {
+            [arr addObject:@(0)];
+        }
+        arr[0] = @([arr[0] intValue] + (int)[ALPHABET indexOfObject:[str substringWithRange:NSMakeRange(i, 1)]]);
+        for (int j = 0; j < arr.count; j++) {
+            if ([arr[j] intValue] > baseOut - 1) {
+                if (j + 1 >= arr.count) {
+                    [arr addObject:@(0)];
+                }
+                arr[j + 1] = @([arr[j + 1] intValue] + ([arr[j] intValue] / baseOut | 0));
+                arr[j] = @([arr[j] intValue] % baseOut);
+            }
+        }
+    }
+    // Reverse
+    NSMutableString *strOut = [[NSMutableString alloc] initWithCapacity:arr.count];
+    for (int i = (int)arr.count; i > 0; i--) {
+        [strOut appendString:ALPHABET[[arr[i - 1] intValue]]];
+    }
+    return [strOut copy];
+}
+
 @end
