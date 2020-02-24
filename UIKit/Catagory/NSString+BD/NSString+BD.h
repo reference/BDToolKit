@@ -60,5 +60,5 @@
 //date
 - (NSDate *)dateWithFormat:(NSString *)format;
 
-+ (NSString *)stringWithValue:(id)value baseIn:(int)baseIn baseOut:(int)baseOut;
++ (NSString *)stringWithValue:(id)value baseIn:(int)baseIn baseOut:(int)baseOut uppercase:(BOOL)uppercase;
 @end
