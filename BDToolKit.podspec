@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.8.9"
+  s.version      = "2.9.0"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/reference/BDToolKit.git", :tag => "#{s.version}" }
 
-  s.frameworks = "UIKit", "Foundation", "WebKit", "AVFoundation", "QuartzCore", "StoreKit", "Security", "AVFoundation", "MediaPlayer", "QuartzCore", "CommonCrypto"
+  s.frameworks = "UIKit", "Foundation", "WebKit", "AVFoundation", "QuartzCore", "StoreKit", "Security", "AVFoundation", "MediaPlayer", "QuartzCore"
   s.requires_arc = true
 
   s.source_files  =  "BDToolKit.h"
