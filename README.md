@@ -99,6 +99,7 @@ pod 'BDToolKit'
 * BDAudioPlayer
 * BDAnimation
 * BDComponentFactory
+* BDCommonCryptor
 
 ## Foundation
 
