@@ -33,6 +33,7 @@
 @property (nonatomic,strong) IBOutletCollection(UITextField) NSArray <UITextField *> *textFields;
 @property (nonatomic,strong) IBOutletCollection(UITextView) NSArray <UITextView *> *textViews;
 @property (nonatomic,strong) IBOutletCollection(UIStackView) NSArray <UIStackView *> *stackViews;
+@property (nonatomic,strong) IBOutletCollection(UITableView) NSArray <UITableView *> *tableViews;
 
 //bd views
 @property (nonatomic,strong) IBOutletCollection(BDView) NSArray <BDStackView *> *bd_views;
