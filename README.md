@@ -100,6 +100,7 @@ pod 'BDToolKit'
 * BDAnimation
 * BDComponentFactory
 * BDCommonCryptor
+* BDAppStoreChecker
 
 ## Foundation
 

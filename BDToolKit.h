@@ -96,6 +96,7 @@ SOFTWARE.
 #import "BDAnimation.h"
 #import "BDComponentFactory.h"
 #import "BDCommonCryptor.h"
+#import "BDAppStoreChecker.h"
 
 /// FOUNDATION
 #import "BDModel.h"
