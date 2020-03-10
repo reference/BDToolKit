@@ -65,6 +65,7 @@ pod 'BDToolKit'
 * NSString+RandomKey.h
 * NSData+RandomData.h
 * UIImage+QRCode
+* UIImage+Color
 * UIViewController+AutoRotaion
 * UIResponder+AutoRotation
 * UIView+ShadowPath

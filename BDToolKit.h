@@ -81,6 +81,7 @@ SOFTWARE.
 #import "NSString+RandomKey.h"
 #import "NSData+RandomData.h"
 #import "UIImage+QRCode.h"
+#import "UIImage+Color.h"
 #import "UIViewController+AutoRotaion.h"
 #import "UIResponder+AutoRotation.h"
 #import "UIView+ShadowPath.h"

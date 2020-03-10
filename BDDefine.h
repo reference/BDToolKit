@@ -51,4 +51,9 @@ SOFTWARE.
 #define __IMG(NAME) [UIImage imageNamed:NAME]
 #define __STRFMT(FMT) [NSString stringWithFormat:FMT]
 
+/// User
+typedef NSString *BDUserNotification NS_EXTENSIBLE_STRING_ENUM;
+UIKIT_EXTERN BDUserNotification const BDUserNotificationLogin;
+UIKIT_EXTERN BDUserNotification const BDUserNotificationLogout;
+
 #endif /* BDDefine_h */
