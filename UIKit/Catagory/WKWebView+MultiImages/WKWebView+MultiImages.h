@@ -22,6 +22,8 @@
  SOFTWARE.
  */
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <WebKit/WKWebView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
