@@ -70,6 +70,7 @@ pod 'BDToolKit'
 * UIResponder+AutoRotation
 * UIView+ShadowPath
 * MPMediaItem+CoverToNSData
+* WKWebView+MultiImages
 
 ## BDUIKit
 
