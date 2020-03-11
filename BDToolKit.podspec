@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.9.6"
+  s.version      = "2.9.7"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -25,9 +25,8 @@ Pod::Spec.new do |s|
   s.public_header_files = "BDToolKit.h"
 
     s.subspec "BDDefine" do |ss|
-        ss.source_files  = "BDDefine.h"
-        ss.public_header_files = "BDDefine.h"
-        ss.source_files  = "BDDefine.m"
+        ss.public_header_files  = "Foundation/BDDefine/BDDefine.h"
+        ss.source_files  = "Foundation/BDDefine/*.{h,m}"
     end
 
     s.subspec "NSObject+Identifier" do |ss|
