@@ -47,7 +47,8 @@ SOFTWARE.
 #define IS_PhoneXAll (IS_IPHONE_X || IS_IPHONE_Xr || IS_IPHONE_Xs_Max)
 
 /// UIKit Shortcut
-
+#define __COLORNAME(NAME) [UIColor colorNamed:NAME]
+#define __RGB(r,g,b) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1]
 #define __IMG(NAME) [UIImage imageNamed:NAME]
 #define __STRFMT(FMT) [NSString stringWithFormat:FMT]
 
