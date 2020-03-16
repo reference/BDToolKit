@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "2.9.7"
+  s.version      = "2.9.8"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -72,6 +72,11 @@ Pod::Spec.new do |s|
     s.subspec "UIViewController+AutoRotaion" do |ss|
         ss.source_files  = "UIKit/Catagory/UIViewController+AutoRotaion/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UIViewController+AutoRotaion/*.h"
+    end
+    
+    s.subspec "NSError+LocalizedDescription" do |ss|
+        ss.source_files  = "UIKit/Catagory/NSError+LocalizedDescription/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/NSError+LocalizedDescription/*.h"
     end
     
     s.subspec "UIResponder+AutoRotation" do |ss|

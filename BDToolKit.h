@@ -87,6 +87,7 @@ SOFTWARE.
 #import "UIView+ShadowPath.h"
 #import "MPMediaItem+CoverToNSData.h"
 #import "WKWebView+MultiImages.h"
+#import "NSError+LocalizedDescription.h"
 
 //controllers
 #import "BDViewController.h"

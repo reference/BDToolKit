@@ -71,6 +71,7 @@ pod 'BDToolKit'
 * UIView+ShadowPath
 * MPMediaItem+CoverToNSData
 * WKWebView+MultiImages
+* NSError+LocalizedDescription
 
 ## BDUIKit
 
