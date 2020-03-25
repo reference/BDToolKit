@@ -25,3 +25,5 @@ SOFTWARE.
 
 BDUserNotification const BDUserNotificationLogin = @"kBDUserNotificationLogin";
 BDUserNotification const BDUserNotificationLogout = @"kBDUserNotificationLogout";
+
+BDTokenNotification const BDTokenNotificationExpired = @"kBDTokenNotificationExpired";

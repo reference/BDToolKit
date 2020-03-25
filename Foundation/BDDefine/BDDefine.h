@@ -55,7 +55,9 @@ SOFTWARE.
 
 /// User
 typedef NSString *BDUserNotification NS_EXTENSIBLE_STRING_ENUM;
-UIKIT_EXTERN BDUserNotification const BDUserNotificationLogin;
-UIKIT_EXTERN BDUserNotification const BDUserNotificationLogout;
+typedef NSString *BDTokenNotification NS_EXTENSIBLE_STRING_ENUM;
+UIKIT_EXTERN BDUserNotification     const   BDUserNotificationLogin;
+UIKIT_EXTERN BDUserNotification     const   BDUserNotificationLogout;
+UIKIT_EXTERN BDTokenNotification    const   BDTokenNotificationExpired;
 
 #endif /* BDDefine_h */

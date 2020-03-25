@@ -88,6 +88,8 @@ SOFTWARE.
 #import "MPMediaItem+CoverToNSData.h"
 #import "WKWebView+MultiImages.h"
 #import "NSError+LocalizedDescription.h"
+#import "UIButton+Badge.h"
+#import "UIBarButtonItem+Badge.h"
 
 //controllers
 #import "BDViewController.h"

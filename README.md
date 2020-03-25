@@ -72,6 +72,8 @@ pod 'BDToolKit'
 * MPMediaItem+CoverToNSData
 * WKWebView+MultiImages
 * NSError+LocalizedDescription
+* UIButton+Badge
+* UIBarButtonItem+Badge
 
 ## BDUIKit
 
