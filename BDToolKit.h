@@ -90,6 +90,7 @@ SOFTWARE.
 #import "NSError+LocalizedDescription.h"
 #import "UIButton+Badge.h"
 #import "UIBarButtonItem+Badge.h"
+#import "UIBarButtonItem+Property.h"
 
 //controllers
 #import "BDViewController.h"

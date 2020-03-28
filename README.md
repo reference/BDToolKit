@@ -74,6 +74,7 @@ pod 'BDToolKit'
 * NSError+LocalizedDescription
 * UIButton+Badge
 * UIBarButtonItem+Badge
+* UIBarButtonItem+Property
 
 ## BDUIKit
 
