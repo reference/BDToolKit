@@ -222,7 +222,11 @@ static NSMutableSet<NSString *> *kSpecialControllers;
 
 + (void)fixedControllerOrientationWithController:(UIViewController *)controller {
     // 特殊的 Controller
-    if ([kSpecialControllers containsObject: NSStringFromClass(controller.class)]) {
+    NSString *cn = NSStringFromClass(controller.class);
+    if ([cn containsString:@"."]) {
+        cn = [cn componentsSeparatedByString:@"."].lastObject;
+    }
+    if ([kSpecialControllers containsObject: cn]) {
         UIInterfaceOrientationMask mask = [UIViewController windowTopViewControllerOrientationMask];
         controller.ar_orientationMask = mask;
     }
@@ -234,9 +238,17 @@ static NSMutableSet<NSString *> *kSpecialControllers;
     UIViewController *ctrl = nil;
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     // 排队键盘等其它窗口，找到真实的 View 窗口
-    if (![@"UIWindow" isEqualToString:NSStringFromClass(keyWindow.class)]) {
+    NSString *cn = NSStringFromClass(keyWindow.class);
+    if ([cn containsString:@"."]) {
+        cn = [cn componentsSeparatedByString:@"."].lastObject;
+    }
+    if (![@"UIWindow" isEqualToString:cn]) {
         for (UIWindow *window in [UIApplication sharedApplication].windows) {
-            if ([@"UIWindow" isEqualToString:NSStringFromClass(window.class)]) {
+            NSString *cn1 = NSStringFromClass(window.class);
+            if ([cn1 containsString:@"."]) {
+                cn1 = [cn1 componentsSeparatedByString:@"."].lastObject;
+            }
+            if ([@"UIWindow" isEqualToString:cn1]) {
                 keyWindow = window;
                 break;
             }
@@ -244,9 +256,13 @@ static NSMutableSet<NSString *> *kSpecialControllers;
     }
     ctrl = [UIViewController ar_topViewControllerForWindow:keyWindow];
     // 处理特殊的 Controller
-    if (ctrl && [kSpecialControllers containsObject:NSStringFromClass(ctrl.class)]) {
+    NSString *ctrlcn = NSStringFromClass(ctrl.class);
+    if ([ctrlcn containsString:@"."]) {
+        ctrlcn = [cn componentsSeparatedByString:@"."].lastObject;
+    }
+    if (ctrl && [kSpecialControllers containsObject:ctrlcn]) {
         // 找到弹出特殊 Controller 的类
-        while ([kSpecialControllers containsObject:NSStringFromClass(ctrl.class)] && ctrl.presentingViewController) {
+        while ([kSpecialControllers containsObject:ctrlcn] && ctrl.presentingViewController) {
             ctrl = ctrl.presentingViewController;
         }
         // 获取真实的 Controller
@@ -259,7 +275,7 @@ static NSMutableSet<NSString *> *kSpecialControllers;
             }
         }
         // 获取真实需要处理的 Controller
-        if (ctrl && ![kSpecialControllers containsObject:NSStringFromClass(ctrl.class)]) {
+        if (ctrl && ![kSpecialControllers containsObject:ctrlcn]) {
             mask = [ctrl ar_supportedOrientations];
         }
     } else if (ctrl) {

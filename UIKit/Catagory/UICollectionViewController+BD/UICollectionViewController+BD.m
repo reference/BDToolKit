@@ -28,7 +28,11 @@
 
 - (void)performSegueWithClass:(Class)cls sender:(id)sender
 {
-    [self performSegueWithIdentifier:NSStringFromClass(cls) sender:sender];
+    NSString *cn = NSStringFromClass(cls);
+    if ([cn containsString:@"."]) {
+        cn = [cn componentsSeparatedByString:@"."].lastObject;
+    }
+    [self performSegueWithIdentifier:cn sender:sender];
 }
 
 @end
