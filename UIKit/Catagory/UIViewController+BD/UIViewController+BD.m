@@ -46,14 +46,22 @@
 - (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName
 {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass(cls)];
+    NSString *cn = NSStringFromClass(cls);
+    if ([cn containsString:@"."]) {
+        cn = [cn componentsSeparatedByString:@"."].lastObject;
+    }
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:cn];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)pushViewControllerClass:(Class)cls inStoryboard:(NSString *)storyboardName block:(void(^)(UIViewController *vc))block
 {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass(cls)];
+    NSString *cn = NSStringFromClass(cls);
+    if ([cn containsString:@"."]) {
+        cn = [cn componentsSeparatedByString:@"."].lastObject;
+    }
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:cn];
     if (block) {
         block(vc);
     }
