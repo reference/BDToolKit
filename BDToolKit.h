@@ -91,6 +91,7 @@ SOFTWARE.
 #import "UIButton+Badge.h"
 #import "UIBarButtonItem+Badge.h"
 #import "UIBarButtonItem+Property.h"
+#import "UITableView+Dequeue.h"
 
 //controllers
 #import "BDViewController.h"

@@ -21,18 +21,17 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+#import "UITableView+Dequeue.h"
 
-#import "UITableViewController+BD.h"
+@implementation UITableView(Dequeue)
 
-@implementation UITableViewController(BD)
-
-- (void)performSegueWithClass:(Class)cls sender:(id)sender
+- (nullable __kindof UITableViewCell *)dequeueReusableCellWithClass:(Class )cls
 {
     NSString *cn = NSStringFromClass(cls);
     if ([cn containsString:@"."]) {
         cn = [cn componentsSeparatedByString:@"."].lastObject;
     }
-    [self performSegueWithIdentifier:cn sender:sender];
+    return [self dequeueReusableCellWithIdentifier:cn];
 }
 
 @end
