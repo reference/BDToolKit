@@ -104,6 +104,7 @@ SOFTWARE.
 #import "BDComponentFactory.h"
 #import "BDCommonCryptor.h"
 #import "BDAppStoreChecker.h"
+#import "BDPullScaleCollectionViewFlowLayout.h"
 
 /// FOUNDATION
 #import "BDModel.h"

@@ -107,6 +107,7 @@ pod 'BDToolKit'
 * BDComponentFactory
 * BDCommonCryptor
 * BDAppStoreChecker
+* BDPullScaleCollectionViewFlowLayout
 
 ## Foundation
 

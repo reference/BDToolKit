@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "3.0.4"
+  s.version      = "3.0.5"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -352,6 +352,11 @@ Pod::Spec.new do |s|
         ss.source_files  = "UIKit/Utils/BDAudioPlayer/*.{h,m}"
         ss.public_header_files = "UIKit/Utils/BDAudioPlayer/*.h"
         ss.resources = "UIKit/Utils/BDAudioPlayer/*.bundle"
+    end
+    
+    s.subspec "BDPullScaleCollectionViewFlowLayout" do |ss|
+        ss.source_files  = "UIKit/Utils/BDPullScaleCollectionViewFlowLayout/*.{h,m}"
+        ss.public_header_files = "UIKit/Utils/BDPullScaleCollectionViewFlowLayout/*.h"
     end
     
     s.subspec "BDComponentFactory" do |ss|
