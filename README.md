@@ -75,6 +75,7 @@ pod 'BDToolKit'
 * UIButton+Badge
 * UIBarButtonItem+Badge
 * UIBarButtonItem+Property
+* UICollectionViewFlowLayout+Float
 
 ## BDUIKit
 

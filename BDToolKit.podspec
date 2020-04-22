@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "3.0.5"
+  s.version      = "3.0.6"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -90,6 +90,11 @@ Pod::Spec.new do |s|
         ss.public_header_files = "UIKit/Catagory/UIImage+QRCode/*.h"
     end
     
+    s.subspec "UICollectionViewFlowLayout+Float" do |ss|
+        ss.source_files  = "UIKit/Catagory/UICollectionViewFlowLayout+Float/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UICollectionViewFlowLayout+Float/*.h"
+    end
+
     s.subspec "UIImage+Color" do |ss|
         ss.source_files  = "UIKit/Catagory/UIImage+Color/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UIImage+Color/*.h"
