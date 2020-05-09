@@ -39,4 +39,9 @@
 {
     return [tableView dequeueReusableCellWithIdentifier:identifier];
 }
+
++ (CGFloat)heightForCell
+{
+    return 44;
+}
 @end

@@ -21,21 +21,33 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-#import "BDCollectionReusableView.h"
+#import <UIKit/UIKit.h>
 
-@implementation BDCollectionReusableView
-- (IBAction)onButtons:(UIButton *)btn
-{
-    if (self.onClickedButtons) {
-        self.onClickedButtons(btn.tag);
-    }
-    if (self.onClickedButtonsCallback) {
-        self.onClickedButtonsCallback(btn);
-    }
-}
+@protocol BDTagViewTapDelegate <NSObject>
 
-+ (CGFloat)heightForReuseableView
-{
-    return 44;
-}
+@optional
+
+- (void)tapTag:(UILabel *)aTag index:(NSInteger)index;
+
+@end
+
+@interface BDTagView : UIView
+
+@property (nonatomic,strong) NSArray *tagTitleArray;
+
+@property (nonatomic,strong) NSArray *tagColorArray;
+
+@property (nonatomic,assign) NSInteger tagFontSize;
+
+@property (nonatomic,weak) id<BDTagViewTapDelegate> delegate;
+
+@property (nonatomic,strong) NSArray *tagTitleColorArray;
+
+@property (nonatomic,assign) BOOL isRound;
+
+@property (nonatomic,assign) CGFloat tagCornerRadius;
+
+- (void)createTags;
+
+- (void)CreateTagswithFixRow:(NSInteger) row;
 @end

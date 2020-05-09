@@ -44,6 +44,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) void (^onClickedButtonsCallback)(UIButton *btn);
 
 - (IBAction)onButtons:(UIButton *)btn;
+
+/// override
++ (CGFloat)heightForReuseableView;
 @end
 
 NS_ASSUME_NONNULL_END

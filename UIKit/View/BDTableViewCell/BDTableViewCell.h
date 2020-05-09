@@ -44,4 +44,7 @@
 
 - (IBAction)onButtons:(UIButton *)btn;
 + (id)cellWithReuseIdentifier:(NSString *)identifier forTableView:(UITableView *)tableView;
+
+/// override
++ (CGFloat)heightForCell;
 @end
