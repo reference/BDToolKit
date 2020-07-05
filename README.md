@@ -124,6 +124,7 @@ pod 'BDToolKit'
 * NSString+PercentEncoding
 * NSURLComponents+Pairs
 * NSData+DeviceToken
+* NSString+Base64Image
 
 ## License
 

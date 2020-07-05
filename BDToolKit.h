@@ -118,5 +118,6 @@ SOFTWARE.
 #import "NSString+PercentEncoding.h"
 #import "NSURLComponents+Pairs.h"
 #import "NSData+DeviceToken.h"
+#import "NSString+Base64Image.h"
 
 #endif /* BDToolKit_h */
