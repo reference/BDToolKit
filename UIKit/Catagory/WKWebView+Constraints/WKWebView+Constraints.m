@@ -24,15 +24,15 @@
 #import "WKWebView+Constraints.h"
 #import <objc/runtime.h>
 
-static const char *kTop = "__kTop__";
-static const char *kBottom = "__kBottom__";
-static const char *kLeft = "__kLeft__";
-static const char *kRight = "__kRight__";
-static const char *kWidth = "__kWidth__";
-static const char *kHeight = "__kHeight__";
-static const char *kOther = "__kOther__";
-static const char *kCenterX = "__kCenterX__";
-static const char *kCenterY = "__kCenterY__";
+static const char *kTop = "__kTop__v";
+static const char *kBottom = "__kBottom__v";
+static const char *kLeft = "__kLeft__v";
+static const char *kRight = "__kRight__v";
+static const char *kWidth = "__kWidth__v";
+static const char *kHeight = "__kHeight__v";
+static const char *kOther = "__kOther__v";
+static const char *kCenterX = "__kCenterX__v";
+static const char *kCenterY = "__kCenterY__v";
 
 @implementation WKWebView(Constraints)
 //top
