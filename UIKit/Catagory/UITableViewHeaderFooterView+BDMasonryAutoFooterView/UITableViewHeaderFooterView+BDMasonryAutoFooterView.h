@@ -23,16 +23,38 @@
  */
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <WebKit/WebKit.h>
 
-@interface WKWebView(Constraints)
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *topLayoutConstraint;
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *bottomLayoutConstraint;
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *leftLayoutConstraint;
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *rightLayoutConstraint;
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *heightLayoutConstraint;
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *widthLayoutConstraint;
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *centerXLayoutConstraint;
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *centerYLayoutConstraint;
-@property (nonatomic,strong) IBOutlet NSLayoutConstraint *otherLayoutConstraint;
+NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^BDFooterViewBlock)(UITableViewHeaderFooterView *sourceView);
+
+typedef NSDictionary *_Nullable(^BDCacheHeight)(void);
+
+FOUNDATION_EXTERN NSString *const kBDCacheUniqueKey;
+
+FOUNDATION_EXTERN NSString *const kBDCacheStateKey;
+
+FOUNDATION_EXTERN NSString *const kBDRecalculateForStateKey;
+
+@interface UITableView (BDCacheFooterViewHeight)
+
+@property (nonatomic, strong, readonly) NSMutableDictionary *bd_cacheFooterViewHeightDict;
+
+@property (nonatomic, strong, readonly) NSMutableDictionary *bd_reuseFooterViews;
 @end
+
+/// auto layout footer view for tableview
+@interface UITableViewHeaderFooterView (BDMasonryAutoFooterViewHeight)
+
+@property (nonatomic, strong) UIView *bd_lastViewInView;
+
+@property (nonatomic, assign) CGFloat bd_bottomOffsetToView;
+
++ (CGFloat)bd_heightForTableView:(UITableView *)tableView config:(BDFooterViewBlock)config;
+
++ (CGFloat)bd_heightForTableView:(UITableView *)tableView
+                           config:(BDFooterViewBlock)config
+                            cache:(BDCacheHeight)cache;
+@end
+
+NS_ASSUME_NONNULL_END
