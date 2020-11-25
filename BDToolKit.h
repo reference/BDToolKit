@@ -113,6 +113,8 @@ SOFTWARE.
 
 /// FOUNDATION
 #import "BDModel.h"
+#import "BDRSA.h"
+#import "BDRSAEncryptor.h"
 
 //catagory
 #import "NSURLProtocol+WKWebVIew.h"
