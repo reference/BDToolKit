@@ -96,6 +96,7 @@ SOFTWARE.
 #import "UICollectionViewFlowLayout+Float.h"
 #import "WKWebView+Constraints.h"
 #import "UITableViewHeaderFooterView+BDMasonryAutoFooterView.h"
+#import "UINavigationBar+BDToolKit.h"
 
 //controllers
 #import "BDViewController.h"

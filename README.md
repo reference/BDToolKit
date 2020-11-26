@@ -78,6 +78,7 @@ pod 'BDToolKit'
 * UICollectionViewFlowLayout+Float
 * WKWebView+Constraints
 * UITableViewHeaderFooterView+BDMasonryAutoFooterView
+* UINavigationBar+BDToolKit
 
 ## BDUIKit
 
