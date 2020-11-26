@@ -97,6 +97,7 @@ SOFTWARE.
 #import "WKWebView+Constraints.h"
 #import "UITableViewHeaderFooterView+BDMasonryAutoFooterView.h"
 #import "UINavigationBar+BDToolKit.h"
+#import "WKWebView+AccessoryHiding.h"
 
 //controllers
 #import "BDViewController.h"

@@ -79,6 +79,7 @@ pod 'BDToolKit'
 * WKWebView+Constraints
 * UITableViewHeaderFooterView+BDMasonryAutoFooterView
 * UINavigationBar+BDToolKit
+* WKWebView+AccessoryHiding
 
 ## BDUIKit
 
