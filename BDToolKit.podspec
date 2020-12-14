@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "3.2.3"
+  s.version      = "3.2.4"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -60,6 +60,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec "BDQuickSecurityCode" do |ss|
+        ss.dependency 'BDToolKit/UITextField+BDQuickSecurityCode'
         ss.source_files  = "UIKit/View/BDQuickSecurityCode/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDQuickSecurityCode/*.h"
     end
