@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "3.2.2"
+  s.version      = "3.2.3"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -57,6 +57,11 @@ Pod::Spec.new do |s|
     s.subspec "BDMovingIcon" do |ss|
         ss.source_files  = "UIKit/View/BDMovingIcon/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDMovingIcon/*.h"
+    end
+    
+    s.subspec "BDQuickSecurityCode" do |ss|
+        ss.source_files  = "UIKit/View/BDQuickSecurityCode/*.{h,m}"
+        ss.public_header_files = "UIKit/View/BDQuickSecurityCode/*.h"
     end
     
     s.subspec "UILabel+NSNumberFormat" do |ss|
@@ -138,6 +143,11 @@ Pod::Spec.new do |s|
     s.subspec "UIView+Tap" do |ss|
         ss.source_files  = "UIKit/Catagory/UIView+Tap/*.{h,m}"
         ss.public_header_files = "UIKit/Catagory/UIView+Tap/*.h"
+    end
+    
+    s.subspec "UITextField+BDQuickSecurityCode" do |ss|
+        ss.source_files  = "UIKit/Catagory/UITextField+BDQuickSecurityCode/*.{h,m}"
+        ss.public_header_files = "UIKit/Catagory/UITextField+BDQuickSecurityCode/*.h"
     end
     
     s.subspec "UITableView+Dequeue" do |ss|

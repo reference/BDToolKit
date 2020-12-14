@@ -2,9 +2,9 @@
 
 git add -A
 
-git commit -m 'Release 3.2.2'
+git commit -m 'Release 3.2.3'
 
-git tag 3.2.2
+git tag 3.2.3
 
 git push --tags
 

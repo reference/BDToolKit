@@ -47,6 +47,7 @@ SOFTWARE.
 #import "BDCollectionViewFlowLayout.h"
 #import "BDAutoScrollLabel.h"
 #import "BDMovingIcon.h"
+#import "BDQuickSecurityCode.h"
 
 //catagory
 #import "UIView+BD.h"
@@ -98,6 +99,7 @@ SOFTWARE.
 #import "UITableViewHeaderFooterView+BDMasonryAutoFooterView.h"
 #import "UINavigationBar+BDToolKit.h"
 #import "WKWebView+AccessoryHiding.h"
+#import "UITextField+BDQuickSecurityCode.h"
 
 //controllers
 #import "BDViewController.h"

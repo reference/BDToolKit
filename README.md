@@ -80,6 +80,7 @@ pod 'BDToolKit'
 * UITableViewHeaderFooterView+BDMasonryAutoFooterView
 * UINavigationBar+BDToolKit
 * WKWebView+AccessoryHiding
+* UITextField+BDQuickSecurityCode
 
 ## BDUIKit
 
@@ -106,6 +107,7 @@ pod 'BDToolKit'
 * BDCollectionViewFlowLayout
 * BDAutoScrollLabel
 * BDMovingIcon
+* BDQuickSecurityCode
 
 ### Utils
 * BDAudioPlayer
