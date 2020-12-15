@@ -10,4 +10,4 @@ git push --tags
 
 git push origin master
 
-pod trunk push BDToolKit.podspec --allow-warnings
+pod trunk push BDToolKit.podspec --allow-warnings --verbose
