@@ -117,6 +117,7 @@ pod 'BDToolKit'
 * BDAppStoreChecker
 * BDPullScaleCollectionViewFlowLayout
 * BDTagView
+* BDReachability
 
 ## Foundation
 
