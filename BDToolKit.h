@@ -113,7 +113,7 @@ SOFTWARE.
 #import "BDCommonCryptor.h"
 #import "BDAppStoreChecker.h"
 #import "BDPullScaleCollectionViewFlowLayout.h"
-#import "BDTagView.h"
+//#import "BDTagView.h"
 #import "BDPOPNumberAnimation.h"
 
 /// FOUNDATION
