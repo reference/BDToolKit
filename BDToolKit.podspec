@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "3.3.2"
+  s.version      = "3.3.3"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
 
   s.frameworks = "UIKit", "Foundation", "WebKit", "AVFoundation", "QuartzCore", "StoreKit", "Security", "AVFoundation", "MediaPlayer", "QuartzCore"
   s.requires_arc = true
-
+  s.dependency = 'pop'
+  
   s.source_files  =  "BDToolKit.h"
   s.public_header_files = "BDToolKit.h"
 
@@ -397,9 +398,8 @@ Pod::Spec.new do |s|
     end
     
     s.subspec "BDPOPNumberAnimation" do |ss|
-            ss.source_files  = "UIKit/Utils/BDPOPNumberAnimation/*.{h,m}"
-            ss.public_header_files = "UIKit/Utils/BDPOPNumberAnimation/*.h"
-            ss.dependency = 'pop'
+        ss.source_files  = "UIKit/Utils/BDPOPNumberAnimation/*.{h,m}"
+        ss.public_header_files = "UIKit/Utils/BDPOPNumberAnimation/*.h"
     end
     
     s.subspec "BDTagView" do |ss|
