@@ -114,7 +114,7 @@ SOFTWARE.
 #import "BDAppStoreChecker.h"
 #import "BDPullScaleCollectionViewFlowLayout.h"
 #import "BDTagView.h"
-//#import "BDPOPNumberAnimation.h"
+#import "BDPOPNumberAnimation.h"
 
 /// FOUNDATION
 #import "BDModel.h"
