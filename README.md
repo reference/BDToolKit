@@ -118,6 +118,7 @@ pod 'BDToolKit'
 * BDPullScaleCollectionViewFlowLayout
 * BDTagView
 * BDReachability
+* BDPOPNumberAnimation
 
 ## Foundation
 
