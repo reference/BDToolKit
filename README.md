@@ -81,6 +81,7 @@ pod 'BDToolKit'
 * UINavigationBar+BDToolKit
 * WKWebView+AccessoryHiding
 * UITextField+BDQuickSecurityCode
+* UIScrollView+APParallaxHeader
 
 ## BDUIKit
 

@@ -100,6 +100,7 @@ SOFTWARE.
 #import "UINavigationBar+BDToolKit.h"
 #import "WKWebView+AccessoryHiding.h"
 #import "UITextField+BDQuickSecurityCode.h"
+#import "UIScrollView+APParallaxHeader.h"
 
 //controllers
 #import "BDViewController.h"
