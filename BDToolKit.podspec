@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "3.4.1"
+  s.version      = "3.4.2"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -43,7 +43,18 @@ Pod::Spec.new do |s|
         ss.source_files  = "UIKit/View/BDCountDownButton/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDCountDownButton/*.h"
     end
-
+    
+    s.subspec "BDVerifyCodeField" do |ss|
+        ss.source_files  = "UIKit/View/BDVerifyCodeView/*.{h,m}"
+        ss.public_header_files = "UIKit/View/BDVerifyCodeView/*.h"
+    end
+    
+    s.subspec "BDVerifyCodeView" do |ss|
+        ss.dependency 'BDToolKit/BDVerifyCodeField'
+        ss.source_files  = "UIKit/View/BDVerifyCodeView/*.{h,m}"
+        ss.public_header_files = "UIKit/View/BDVerifyCodeView/*.h"
+    end
+    
     s.subspec "BDNavigationBar" do |ss|
         ss.source_files  = "UIKit/View/BDNavigationBar/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDNavigationBar/*.h"

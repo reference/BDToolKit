@@ -48,6 +48,8 @@ SOFTWARE.
 #import "BDAutoScrollLabel.h"
 #import "BDMovingIcon.h"
 #import "BDQuickSecurityCode.h"
+#import "BDVerifyCodeField.h"
+#import "BDVerifyCodeView.h"
 
 //catagory
 #import "UIView+BD.h"

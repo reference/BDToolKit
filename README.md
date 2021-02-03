@@ -109,6 +109,8 @@ pod 'BDToolKit'
 * BDAutoScrollLabel
 * BDMovingIcon
 * BDQuickSecurityCode
+* BDVerifyCodeField
+* BDVerifyCodeView
 
 ### Utils
 * BDAudioPlayer
