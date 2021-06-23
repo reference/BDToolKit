@@ -106,6 +106,7 @@ pod 'BDToolKit'
 * BDCollectionViewFlowLayout
 * BDAutoScrollLabel
 * BDMovingIcon
+* BDWebJsonRequester
 
 ### Utils
 * BDAudioPlayer
