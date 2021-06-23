@@ -71,7 +71,7 @@
                     tempHtmlStr = [tempHtmlStr stringByReplacingOccurrencesOfString:@"\r\n" withString:@""];
                     tempHtmlStr = [tempHtmlStr stringByReplacingOccurrencesOfString:@"\n" withString:@""];
                     tempHtmlStr = [tempHtmlStr stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-                    NSData *utf8Data = [tempHtmlStr dataUsingEncoding:NSUTF8StringEncoding];
+                    //NSData *utf8Data = [tempHtmlStr dataUsingEncoding:NSUTF8StringEncoding];
                   
                     if (self.completion) {
                         self.completion(tempHtmlStr, nil);

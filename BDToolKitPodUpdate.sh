@@ -2,12 +2,12 @@
 
 git add -A
 
-git commit -m 'Release 3.2.4'
+git commit -m 'Release 3.2.5'
 
-git tag 3.2.4
+git tag 3.2.5
 
 git push --tags
 
 git push origin master
 
-pod trunk push BDToolKit.podspec --allow-warnings
+pod trunk push BDToolKit.podspec --allow-warnings --verbose
