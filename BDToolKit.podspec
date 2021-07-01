@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDToolKit"
-  s.version      = "3.4.2"
+  s.version      = "3.4.3"
   s.summary      = "Usefull tool for objective-c develop."
   s.description  = "Usefull tool for objective-c develop.Help yourself in this post.And buy me a cup of coffee.Just kidding.Anyway Where is coffee shop?"
   s.homepage     = "https://github.com/reference/BDToolKit"
@@ -37,6 +37,11 @@ Pod::Spec.new do |s|
     s.subspec "BDView" do |ss|
         ss.source_files  = "UIKit/View/BDView/*.{h,m}"
         ss.public_header_files = "UIKit/View/BDView/*.h"
+    end
+    
+    s.subspec "BDWebJsonRequester" do |ss|
+        ss.source_files  = "UIKit/View/BDWebJsonRequester/*.{h,m}"
+        ss.public_header_files = "UIKit/View/BDWebJsonRequester/*.h"
     end
 
     s.subspec "BDCountDownButton" do |ss|
