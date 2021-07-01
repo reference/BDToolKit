@@ -111,6 +111,7 @@ pod 'BDToolKit'
 * BDQuickSecurityCode
 * BDVerifyCodeField
 * BDVerifyCodeView
+* BDWebJsonRequester
 
 ### Utils
 * BDAudioPlayer

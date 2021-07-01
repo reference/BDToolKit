@@ -50,6 +50,7 @@ SOFTWARE.
 #import "BDQuickSecurityCode.h"
 #import "BDVerifyCodeField.h"
 #import "BDVerifyCodeView.h"
+#import "BDWebJsonRequester.h"
 
 //catagory
 #import "UIView+BD.h"
